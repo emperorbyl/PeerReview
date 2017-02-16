@@ -22,7 +22,7 @@ public:
     double getSlopeY() const;
     double getSlopeZ() const;
     bool isParallelTo(const Edge& otherEdge);
-
+    float isParallelWith(const Edge& otherEdge);
     const Point* getPoint1() { return m_point1; }
     const Point* getPoint2() { return m_point2; }
 

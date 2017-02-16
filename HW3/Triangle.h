@@ -23,7 +23,7 @@ public:
     bool isTriangle() const;
     char getTriangleType() const;
     double computerArea() const;
-
+    int getPointCount() const;
     const Point* getPoint(int index) const;
 
 private:

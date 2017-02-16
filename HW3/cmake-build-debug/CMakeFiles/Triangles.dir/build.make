@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles
+CMAKE_SOURCE_DIR = "C:\Users\Justin Fairbourn\cs1440\HW3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Triangles.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/Triangles.dir/flags.make
 
 CMakeFiles/Triangles.dir/main.cpp.obj: CMakeFiles/Triangles.dir/flags.make
 CMakeFiles/Triangles.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Triangles.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\main.cpp.obj -c Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Triangles.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\main.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW3\main.cpp"
 
 CMakeFiles/Triangles.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Triangles.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\main.cpp > CMakeFiles\Triangles.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW3\main.cpp" > CMakeFiles\Triangles.dir\main.cpp.i
 
 CMakeFiles/Triangles.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Triangles.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\main.cpp -o CMakeFiles\Triangles.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW3\main.cpp" -o CMakeFiles\Triangles.dir\main.cpp.s
 
 CMakeFiles/Triangles.dir/main.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/Triangles.dir/main.cpp.obj.provides.build: CMakeFiles/Triangles.dir/m
 
 CMakeFiles/Triangles.dir/Point.cpp.obj: CMakeFiles/Triangles.dir/flags.make
 CMakeFiles/Triangles.dir/Point.cpp.obj: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Triangles.dir/Point.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\Point.cpp.obj -c Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Triangles.dir/Point.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\Point.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW3\Point.cpp"
 
 CMakeFiles/Triangles.dir/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Triangles.dir/Point.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Point.cpp > CMakeFiles\Triangles.dir\Point.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW3\Point.cpp" > CMakeFiles\Triangles.dir\Point.cpp.i
 
 CMakeFiles/Triangles.dir/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Triangles.dir/Point.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Point.cpp -o CMakeFiles\Triangles.dir\Point.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW3\Point.cpp" -o CMakeFiles\Triangles.dir\Point.cpp.s
 
 CMakeFiles/Triangles.dir/Point.cpp.obj.requires:
 
@@ -106,16 +106,16 @@ CMakeFiles/Triangles.dir/Point.cpp.obj.provides.build: CMakeFiles/Triangles.dir/
 
 CMakeFiles/Triangles.dir/Edge.cpp.obj: CMakeFiles/Triangles.dir/flags.make
 CMakeFiles/Triangles.dir/Edge.cpp.obj: ../Edge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Triangles.dir/Edge.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\Edge.cpp.obj -c Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Triangles.dir/Edge.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\Edge.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW3\Edge.cpp"
 
 CMakeFiles/Triangles.dir/Edge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Triangles.dir/Edge.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Edge.cpp > CMakeFiles\Triangles.dir\Edge.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW3\Edge.cpp" > CMakeFiles\Triangles.dir\Edge.cpp.i
 
 CMakeFiles/Triangles.dir/Edge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Triangles.dir/Edge.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Edge.cpp -o CMakeFiles\Triangles.dir\Edge.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW3\Edge.cpp" -o CMakeFiles\Triangles.dir\Edge.cpp.s
 
 CMakeFiles/Triangles.dir/Edge.cpp.obj.requires:
 
@@ -130,16 +130,16 @@ CMakeFiles/Triangles.dir/Edge.cpp.obj.provides.build: CMakeFiles/Triangles.dir/E
 
 CMakeFiles/Triangles.dir/Triangle.cpp.obj: CMakeFiles/Triangles.dir/flags.make
 CMakeFiles/Triangles.dir/Triangle.cpp.obj: ../Triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Triangles.dir/Triangle.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\Triangle.cpp.obj -c Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Triangles.dir/Triangle.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\Triangle.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW3\Triangle.cpp"
 
 CMakeFiles/Triangles.dir/Triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Triangles.dir/Triangle.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Triangle.cpp > CMakeFiles\Triangles.dir\Triangle.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW3\Triangle.cpp" > CMakeFiles\Triangles.dir\Triangle.cpp.i
 
 CMakeFiles/Triangles.dir/Triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Triangles.dir/Triangle.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Triangle.cpp -o CMakeFiles\Triangles.dir\Triangle.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW3\Triangle.cpp" -o CMakeFiles\Triangles.dir\Triangle.cpp.s
 
 CMakeFiles/Triangles.dir/Triangle.cpp.obj.requires:
 
@@ -154,16 +154,16 @@ CMakeFiles/Triangles.dir/Triangle.cpp.obj.provides.build: CMakeFiles/Triangles.d
 
 CMakeFiles/Triangles.dir/Utils.cpp.obj: CMakeFiles/Triangles.dir/flags.make
 CMakeFiles/Triangles.dir/Utils.cpp.obj: ../Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Triangles.dir/Utils.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\Utils.cpp.obj -c Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Triangles.dir/Utils.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Triangles.dir\Utils.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW3\Utils.cpp"
 
 CMakeFiles/Triangles.dir/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Triangles.dir/Utils.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Utils.cpp > CMakeFiles\Triangles.dir\Utils.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW3\Utils.cpp" > CMakeFiles\Triangles.dir\Utils.cpp.i
 
 CMakeFiles/Triangles.dir/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Triangles.dir/Utils.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\Utils.cpp -o CMakeFiles\Triangles.dir\Utils.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW3\Utils.cpp" -o CMakeFiles\Triangles.dir\Utils.cpp.s
 
 CMakeFiles/Triangles.dir/Utils.cpp.obj.requires:
 
@@ -196,7 +196,7 @@ Triangles.exe: CMakeFiles/Triangles.dir/build.make
 Triangles.exe: CMakeFiles/Triangles.dir/linklibs.rsp
 Triangles.exe: CMakeFiles/Triangles.dir/objects1.rsp
 Triangles.exe: CMakeFiles/Triangles.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Triangles.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Triangles.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Triangles.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -217,6 +217,6 @@ CMakeFiles/Triangles.dir/clean:
 .PHONY : CMakeFiles/Triangles.dir/clean
 
 CMakeFiles/Triangles.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug Y:\Dropbox\UnderGit\cs1440s17-shared\Triangles\cmake-build-debug\CMakeFiles\Triangles.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Justin Fairbourn\cs1440\HW3" "C:\Users\Justin Fairbourn\cs1440\HW3" "C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug" "C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug" "C:\Users\Justin Fairbourn\cs1440\HW3\cmake-build-debug\CMakeFiles\Triangles.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Triangles.dir/depend
 

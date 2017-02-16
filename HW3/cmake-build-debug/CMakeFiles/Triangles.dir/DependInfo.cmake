@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.cpp" "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Triangles.dir/Edge.cpp.obj"
-  "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.cpp" "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Triangles.dir/Point.cpp.obj"
-  "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.cpp" "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Triangles.dir/Triangle.cpp.obj"
-  "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.cpp" "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Triangles.dir/Utils.cpp.obj"
-  "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/main.cpp" "Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Triangles.dir/main.cpp.obj"
+  "C:/Users/Justin Fairbourn/cs1440/HW3/Edge.cpp" "C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/CMakeFiles/Triangles.dir/Edge.cpp.obj"
+  "C:/Users/Justin Fairbourn/cs1440/HW3/Point.cpp" "C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/CMakeFiles/Triangles.dir/Point.cpp.obj"
+  "C:/Users/Justin Fairbourn/cs1440/HW3/Triangle.cpp" "C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/CMakeFiles/Triangles.dir/Triangle.cpp.obj"
+  "C:/Users/Justin Fairbourn/cs1440/HW3/Utils.cpp" "C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/CMakeFiles/Triangles.dir/Utils.cpp.obj"
+  "C:/Users/Justin Fairbourn/cs1440/HW3/main.cpp" "C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/CMakeFiles/Triangles.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

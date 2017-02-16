@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Triangles">
-				<Option output="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Triangles.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug"/>
+				<Option output="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Triangles.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 Triangles"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 Triangles"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Triangles/fast">
-				<Option output="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Triangles.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug"/>
+				<Option output="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Triangles.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,25 +53,25 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 Triangles/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 Triangles/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Test">
-				<Option output="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Test.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug"/>
+				<Option output="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -84,15 +84,15 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Test/fast">
-				<Option output="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Test.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug"/>
+				<Option output="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -105,86 +105,86 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Justin Fairbourn/cs1440/HW3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Edge.cpp">
 			<Option target="Triangles"/>
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Edge.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Edge.h">
 			<Option target="Triangles"/>
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Point.cpp">
 			<Option target="Triangles"/>
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Point.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Point.h">
 			<Option target="Triangles"/>
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/EdgeTester.cpp">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/EdgeTester.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/EdgeTester.h">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/PointTester.cpp">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/PointTester.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/PointTester.h">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/TriangleTester.cpp">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/TriangleTester.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/TriangleTester.h">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/UtilsTester.cpp">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/UtilsTester.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/UtilsTester.h">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Testing/testMain.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Testing/testMain.cpp">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Triangle.cpp">
 			<Option target="Triangles"/>
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Triangle.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Triangle.h">
 			<Option target="Triangles"/>
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Utils.cpp">
 			<Option target="Triangles"/>
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/Utils.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/Utils.h">
 			<Option target="Triangles"/>
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/main.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/main.cpp">
 			<Option target="Triangles"/>
 		</Unit>
-		<Unit filename="Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/CMakeLists.txt">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
