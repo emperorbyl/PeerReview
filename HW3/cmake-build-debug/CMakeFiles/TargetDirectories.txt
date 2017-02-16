@@ -1,0 +1,4 @@
+Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Triangles.dir
+Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/Test.dir
+Y:/Dropbox/UnderGit/cs1440s17-shared/Triangles/cmake-build-debug/CMakeFiles/edit_cache.dir
