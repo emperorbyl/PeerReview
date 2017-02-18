@@ -33,10 +33,7 @@ bool split(const std::string& s, char delimiter, std::string pieces[], int expec
     while (std::getline(ss,item,delimiter))
     {
         if(i<expectedNumberOfPieces) pieces[i] = item;
-        //std::cout << item << std::endl;
         i++;
-        //std::cout << i << std::endl;
-
     }
     return (i==expectedNumberOfPieces);
 }

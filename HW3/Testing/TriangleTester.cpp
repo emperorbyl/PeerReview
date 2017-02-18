@@ -90,8 +90,75 @@ void TriangleTester::testSecondConstructor()
 {
     std::cout << "Execute TriangleTester::testSecondConstructor" << std::endl;
 
-    // TODO: Write representative test cases for the Triangle's second constructor
+    // TODO: Write representative test cases for the Triangle's second
 
+    std::string triangleStr="1,2,8|3,1,4|6,4,3";
+
+    Triangle t(triangleStr);
+    if (!t.isValid())
+    {
+        std::cout << "Failure to constructor a triangle from 3 points; unexpectedly invalid" << std::endl;
+        return;
+    }
+
+    if (!t.isTriangle())
+    {
+        std::cout << "Failure to constructor a triangle from 3 points; unexpectedly not a triangle" << std::endl;
+        return;
+    }
+
+    if (t.getTriangleType()!='S')
+    {
+        std::cout << "Triangle: unexpected type of "
+                  << t.getTriangleType() << std::endl;
+        return;
+    }
+
+    if (!approximatelyEquals(t.computerArea(), 9.35414, 0.001))
+    {
+        std::cout << "Triangle: unexpected area of "
+                  << t.computerArea() << std::endl;
+        return;
+    }
+
+    const Point* p = t.getPoint(0);
+    if (p== nullptr)
+    {
+        std::cout << "Failure to get point 0 from triangle" << std::endl;
+        return;
+    }
+
+    if (p->getX()!=1 || p->getY()!=2 || p->getZ()!=8)
+    {
+        std::cout << "Point 0 of triangle is not as expected, namely (1,2,8)" << std::endl;
+        return;
+    }
+
+    p = t.getPoint(1);
+    if (p== nullptr)
+    {
+        std::cout << "Failure to get point 1 from triangle" << std::endl;
+        return;
+    }
+
+    if (p->getX()!=3 || p->getY()!=1 || p->getZ()!=4)
+    {
+        std::cout << "Point 1 of triangle is not as expected, namely (3,1,4)" << std::endl;
+        return;
+    }
+
+    p = t.getPoint(2);
+    if (p== nullptr)
+    {
+        std::cout << "Failure to get point 1 from triangle" << std::endl;
+        return;
+    }
+
+    if (p->getX()!=6 || p->getY()!=4 || p->getZ()!=3)
+    {
+        std::cout << "Point 2 of triangle is not as expected, namely (6,4,3)" << std::endl;
+        return;
+    }
 }
 
 void TriangleTester::testEquilateralTriangles()
@@ -155,4 +222,26 @@ void TriangleTester::testInvalid()
     std::cout << "Execute TriangleTester::testInvalid" << std::endl;
 
     // TODO: Write representative test cases invalid triangles
+
+    Point** points0 = new Point*[3];
+    points0[0] = new Point(1,2,8);
+    points0[1] = new Point(3,1,4);
+    points0[2] = nullptr;
+
+    Triangle t0(points0);
+    if(t0.isTriangle()){
+        std::cout << "Failure in t0.isValid()="
+                  << t0.isValid() << " should be 0";
+    }
+
+    Point** points1 = new Point*[3];
+    points1[0] = new Point(1,1,1);
+    points1[1] = new Point(1,1,1);
+    points1[2] = new Point(0,0,0);
+
+    Triangle t1(points1);
+    if(t1.isTriangle()){
+        std::cout << "Failure in t1.isValid()="
+                  << t1.isValid() << " should be 0";
+    }
 }
