@@ -55,10 +55,17 @@ void UtilsTester::testSplit()
                   << lineToSplit << "\": result value not as expected" << std::endl;
         return;
     }
-
+    /*
+     * This is was listed as a "good" case, but was in fact a "bad" case.
+     * initially, the first if statement read: "split(lineToSplit, ',', pieces, 0)
+     * but if this was intended to be a "good case", the last argument should be 4.
+     * Additionally, it was using the previous test case's parameters as what it
+     * was comparing pieces[0-2] to. I fixed that as well.
+     *
+     */
     lineToSplit = "MNO,PQR,STU";
-    if (split(lineToSplit, ',', pieces, 0)) {
-        if (pieces[0] != "ABCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDD" || pieces[1] != "D" || pieces[2] != "E") {
+    if (split(lineToSplit, ',', pieces, 3)) {
+        if (pieces[0] != "MNO" || pieces[1] != "PQR" || pieces[2] != "STU") {
             std::cout << "Failure in split(lineToSplit, ',', pieces, 0) for lineToSplit=\""
                       << lineToSplit << "\": pieces not as expected" << std::endl;
             return;
@@ -85,7 +92,14 @@ void UtilsTester::testSplit()
     // Check bad cases
     lineToSplit = "MNO,PQR,STU";
     if (split(lineToSplit, ',', pieces, 4)) {
-        std::cout << "Failure in split(lineToSplit, ',', pieces, 0) for lineToSplit=\""
+        std::cout << "Failure in split(lineToSplit, ',', pieces, 4) for lineToSplit=\""
+                  << lineToSplit << "\": result value not as expected" << std::endl;
+        return;
+    }
+
+    lineToSplit = "MNO,PQR,STU,VWX";
+    if (split(lineToSplit, ',', pieces, 3)) {
+        std::cout << "Failure in split(lineToSplit, ',', pieces, 3) for lineToSplit=\""
                   << lineToSplit << "\": result value not as expected" << std::endl;
         return;
     }

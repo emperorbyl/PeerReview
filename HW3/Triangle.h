@@ -23,6 +23,7 @@ public:
     bool isTriangle() const;
     char getTriangleType() const;
     double computerArea() const;
+    //getPointCount was in the UML but not here; I added it
     int getPointCount() const;
     const Point* getPoint(int index) const;
 

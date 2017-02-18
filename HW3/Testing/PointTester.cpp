@@ -167,7 +167,7 @@ void PointTester::testConstructorWithStrings()
     Point p2(2.235,43.2,0);
     Point p3(2.235,43.2,0.00001);
 
-    // Test second constructor by creating for new points that should be the same as the previous four
+    // Test second constructor by creating four new points that should be the same as the previous four
     Point q0("0,0,0");
     if (!q0.isValid() || !q0.isEquivalentTo(p0))
     {
@@ -181,12 +181,82 @@ void PointTester::testConstructorWithStrings()
     }
 
     // TODO: Write additional meaningful test cases for Point's string-based constructor
+    Point q1("1,2,3");
+    if (!q1.isValid() || !q1.isEquivalentTo(p1))
+    {
+        std::cout << "Failure in constructing Point(\"1,2,3\") isValid()="
+                  << q1.isValid()
+                  << " x=" << q1.getX()
+                  << " y=" << q1.getY()
+                  << " z=" << q1.getZ()
+                  << std::endl;
+        return;
+    }
+
+    Point q2("2.235,43.2,0");
+    if (!q2.isValid() || !q2.isEquivalentTo(p2))
+    {
+        std::cout << "Failure in constructing Point(\"2.235,43.2,0,\") is Valid ()="
+                  << q2.isValid()
+                  << " x=" << q2.getX()
+                  << " y=" << q2.getY()
+                  << " z=" << q2.getZ()
+                  << std::endl;
+        return;
+    }
+
+    Point q3("2.235,43.2,0.00001");
+    if (!q3.isValid() || !q3.isEquivalentTo(p3))
+    {
+        std::cout << "Failure in constructing Point(\"2.235,43.2,0.00001\") is Valid ()="
+                  << q3.isValid()
+                  << " x=" << q3.getX()
+                  << " y=" << q3.getY()
+                  << " z=" << q3.getZ()
+                  << std::endl;
+        return;
+    }
+
+    Point q4("-7,3,-92");
+    if(!q4.isValid())
+    {
+        std::cout << "Failure in constructing Point(\"-7,3,-92\") isValid()="
+                  << q4.isValid()
+                  << " x=" << q4.getX()
+                  << " y=" << q4.getY()
+                  << " z=" << q4.getZ()
+                  << std::endl;
+        return;
+    }
+
 }
 
+// TODO: Write meaningful test cases to check for invalid points
 void PointTester::testInvalid() {
     std::cout << "Execute PointTester::testInvalid" << std::endl;
 
+    Point p0("INFINITY,1,0");
+    if (p0.isValid())
+    {
+        std::cout << "Failure in constructing Point(\"INFINITY,1,0\") isValid()="
+                  <<p0.isValid() << "; should be 0 (false)" << std::endl;
+        return;
+    }
 
-    // TODO: Write meaningful test cases to check for invalid points
+    Point p1("0,0,0,0");
+    if (p1.isValid())
+    {
+        std::cout << "Failure in constructing Point(\"0,0,0,0\") isValid()="
+                  << p1.isValid() << "; should be 0 (false)" << std::endl;
+        return;
+    }
+
+    Point p2("1,5");
+    if(p2.isValid())
+    {
+        std::cout << "Failure in constructing Point(\"(1,5)\" isValid()="
+                  <<p2.isValid() << "; should be 0 (false)" << std::endl;
+    }
+
 }
 

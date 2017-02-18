@@ -4,6 +4,7 @@
 
 #include <string>
 #include <cmath>
+#include <iostream>
 #include "Point.h"
 #include "Edge.h"
 #include "Utils.h"
@@ -35,7 +36,11 @@ bool Point::isEquivalentTo(const Point &otherPoint) const
         return false;
 
     Edge edge(this, &otherPoint);
-    return edge.getLength() > m_minDistance;
+    /* This line is incorrect
+     * return edge.getLength() > m_minDistance;
+     * It should be <, not > (fixed below)
+     */
+    return edge.getLength() < m_minDistance;
 }
 
 void Point::initialize(const std::string &pointStr)
@@ -45,7 +50,11 @@ void Point::initialize(const std::string &pointStr)
     {
         m_x = convertStringToDouble(values[0], &m_valid);
         m_y = convertStringToDouble(values[1], &m_valid);
-        m_y = convertStringToDouble(values[2], &m_valid);
+        /* This line is incorrect
+         * m_y = convertStringToDouble(values[2], &m_valid);
+         * it should be m_z, as fixed below:
+         * */
+        m_z = convertStringToDouble(values[2], &m_valid);
         checkForInfinity();
     }
 }
@@ -53,5 +62,9 @@ void Point::initialize(const std::string &pointStr)
 // Computes m_valid based on whether any of the points are infinity
 void Point::checkForInfinity()
 {
-    m_valid = (m_x != INFINITY && m_y != INFINITY && m_z == INFINITY);
+    // *****************************************************************
+    // m_valid = (m_x != INFINITY && m_y != INFINITY && m_z == INFINITY);
+    // This line of code is incorrect: it should be m_z != INFINITY
+    // *****************************************************************
+    m_valid = (m_x != INFINITY && m_y != INFINITY && m_z != INFINITY);
 }

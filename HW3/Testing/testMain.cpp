@@ -43,6 +43,7 @@ int main() {
     edgeTester.testBadEdges();
     std::cout << std::endl;
 
+
     std::cout << "Test Triangle" << std::endl;
     TriangleTester triangleTester;
     triangleTester.testFirstConstructor();

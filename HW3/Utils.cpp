@@ -8,6 +8,7 @@
 #include <sstream>
 #include <fstream>
 #include <cmath>
+#include <iostream>
 #include "Utils.h"
 
 // Splits a string up by the specified delimiter and stores the pieces into an array of strings, and checks
@@ -21,9 +22,21 @@ bool split(const std::string& s, char delimiter, std::string pieces[], int expec
     std::string item;
 
     int i=0;
-    while (std::getline(ss, item, delimiter) && i<expectedNumberOfPieces)
+    /*
+     * This while statement is faulty.
+     * i<expectedNumberOfPieces evaluated true, but then i would not
+     * get incremented if there were more than expectedNumberOfPieces sub-strings
+     * in s. By moving it to an if statement, I fixed this so it will correctly
+     * return false if there are more than expectedNumberOfPieces sub-strings in s
+     *while (std::getline(ss, item, delimiter) && i<expectedNumberOfPieces)
+     */
+    while (std::getline(ss,item,delimiter))
     {
-        pieces[i++] = item;
+        if(i<expectedNumberOfPieces) pieces[i] = item;
+        //std::cout << item << std::endl;
+        i++;
+        //std::cout << i << std::endl;
+
     }
     return (i==expectedNumberOfPieces);
 }
