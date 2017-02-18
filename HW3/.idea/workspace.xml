@@ -17,8 +17,7 @@
     <list default="true" id="d43c2fba-d44f-473f-acbe-6b1f6bb0fe20" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing/TriangleTester.cpp" afterPath="$PROJECT_DIR$/Testing/TriangleTester.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Triangle.cpp" afterPath="$PROJECT_DIR$/Triangle.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils.cpp" afterPath="$PROJECT_DIR$/Utils.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing/testMain.cpp" afterPath="$PROJECT_DIR$/Testing/testMain.cpp" />
     </list>
     <ignored path="Triangles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,52 +37,58 @@
     <favorites_list name="Triangles" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Triangle.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Triangle.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="196">
-                  <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#46#67#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Utils.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Utils.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="334">
-                  <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="TriangleTester.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Testing/TriangleTester.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-482">
-                  <caret line="94" column="48" lean-forward="false" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="testMain.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/testMain.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TriangleTester.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/TriangleTester.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="994">
+              <caret line="372" column="5" lean-forward="false" selection-start-line="372" selection-start-column="5" selection-end-line="372" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Triangle.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Triangle.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2397">
+              <caret line="141" column="29" lean-forward="false" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+              <folding>
+                <element signature="e#46#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Triangle.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Triangle.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Failure to constructor a triangle from 3 points; unexpected area of</find>
+      <find>isos</find>
+      <find>isosceles</find>
     </findStrings>
     <replaceStrings>
       <replace>Triangle: unexpected area of</replace>
@@ -114,10 +119,10 @@
         <option value="$PROJECT_DIR$/Edge.cpp" />
         <option value="$PROJECT_DIR$/Edge.h" />
         <option value="$PROJECT_DIR$/Testing/EdgeTester.cpp" />
-        <option value="$PROJECT_DIR$/Testing/testMain.cpp" />
-        <option value="$PROJECT_DIR$/Testing/TriangleTester.cpp" />
         <option value="$PROJECT_DIR$/Utils.cpp" />
+        <option value="$PROJECT_DIR$/Testing/testMain.cpp" />
         <option value="$PROJECT_DIR$/Triangle.cpp" />
+        <option value="$PROJECT_DIR$/Testing/TriangleTester.cpp" />
       </list>
     </option>
   </component>
@@ -414,7 +419,7 @@
       <workItem from="1487019482380" duration="105000" />
       <workItem from="1487216886389" duration="3659000" />
       <workItem from="1487374658559" duration="12963000" />
-      <workItem from="1487389758679" duration="5889000" />
+      <workItem from="1487389758679" duration="8058000" />
     </task>
     <task id="LOCAL-00001" summary="Changed the EdgeTester, UtilsTester, Triangle, Edge, and Point classes in the UML document to reflect the .h files and vice versa. Several new cMake files have been added/altered due to the project having compiled.">
       <created>1487231460501</created>
@@ -430,11 +435,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487393528650</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&#10;Fixed bugs in the following functions:&#10;- Triangle::getTriangleType&#10;- Triangle::setupEdges&#10;- Triangle::computerArea&#10;- Triangle::Triangle(string)&#10;&#10;Completed the following TODO's&#10;- TriangleTester::testInvalid&#10;- TriangleTester::testSecondConstructor">
+      <created>1487395814947</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487395814947</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64200000" />
+    <option name="totallyTimeSpent" value="66369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -506,7 +518,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed the EdgeTester, UtilsTester, Triangle, Edge, and Point classes in the UML document to reflect the .h files and vice versa. Several new cMake files have been added/altered due to the project having compiled." />
     <MESSAGE value="Fixed bugs in the following functions:&#10; - Point::checkForInfinity&#10; - Edge::getLength&#10; - Point::isEquivalentTo&#10; - (Utils) split&#10; - Edge::isParallelTo&#10; - Edge::getLength&#10; &#10; Completed TODO's in the following test suites:&#10; - PointTester::testConstructorWithStrings&#10; - PointTester::testInvalid&#10; - EdgeTester::testBadEdges&#10; - EdgeTester::testNonLengthEdges&#10; - EdgeTester::testNonParallelEdges&#10; - EdgeTester::testParallelEdges&#10; &#10; Also removed the float isParallelWith function from the Edges class in the .vpp file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs in the following functions:&#10; - Point::checkForInfinity&#10; - Edge::getLength&#10; - Point::isEquivalentTo&#10; - (Utils) split&#10; - Edge::isParallelTo&#10; - Edge::getLength&#10; &#10; Completed TODO's in the following test suites:&#10; - PointTester::testConstructorWithStrings&#10; - PointTester::testInvalid&#10; - EdgeTester::testBadEdges&#10; - EdgeTester::testNonLengthEdges&#10; - EdgeTester::testNonParallelEdges&#10; - EdgeTester::testParallelEdges&#10; &#10; Also removed the float isParallelWith function from the Edges class in the .vpp file." />
+    <MESSAGE value="&#10;Fixed bugs in the following functions:&#10;- Triangle::getTriangleType&#10;- Triangle::setupEdges&#10;- Triangle::computerArea&#10;- Triangle::Triangle(string)&#10;&#10;Completed the following TODO's&#10;- TriangleTester::testInvalid&#10;- TriangleTester::testSecondConstructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Fixed bugs in the following functions:&#10;- Triangle::getTriangleType&#10;- Triangle::setupEdges&#10;- Triangle::computerArea&#10;- Triangle::Triangle(string)&#10;&#10;Completed the following TODO's&#10;- TriangleTester::testInvalid&#10;- TriangleTester::testSecondConstructor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -738,29 +751,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Triangle.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Edge.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing/testMain.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,14 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing/TriangleTester.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="94" column="48" lean-forward="false" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -826,10 +813,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Triangle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/TriangleTester.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="994">
+          <caret line="372" column="5" lean-forward="false" selection-start-line="372" selection-start-column="5" selection-end-line="372" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/testMain.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Triangle.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="2397">
+          <caret line="141" column="29" lean-forward="false" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
           <folding>
             <element signature="e#46#67#0" expanded="true" />
           </folding>

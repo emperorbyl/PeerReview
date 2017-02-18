@@ -51,7 +51,6 @@ int main() {
     triangleTester.testEquilateralTriangles();
     triangleTester.testIsoscelesTriangles();
     triangleTester.testScaleneTriangles();
-    triangleTester.testIsoscelesTriangles();
     triangleTester.testNonTriangles();
     triangleTester.testInvalid();
 
