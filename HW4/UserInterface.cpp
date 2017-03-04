@@ -130,8 +130,6 @@ std::string UserInterface::getStringInput(std::string prompt)
 
     std::getline(std::cin, userInput);
 
-    std::cout << userInput << "GETSTRINGINPUT" << std::endl;
-
     return userInput;
 }
 
@@ -148,8 +146,6 @@ int UserInterface::getNumberInput(std::string prompt, int rangeMin, int rangeMax
                   << rangeMax << " or <enter> to go back): " << std::endl;
 
         std::getline(std::cin, userInput);
-
-        std::cout << userInput << "GETNUMBERINPUT" << std::endl;
 
         if (userInput == "")
         {

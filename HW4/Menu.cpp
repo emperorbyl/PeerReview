@@ -72,8 +72,6 @@ std::string Menu::show() const
 
         std::getline(std::cin, command);
 
-        std::cout << command << "MENU" << std::endl;
-
         keepGoing = !isValidCommand(command);
     }
 
