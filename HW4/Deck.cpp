@@ -13,7 +13,7 @@ Deck::Deck(int cardSize, int cardCount, int numberMax)
         m_cardSize = cardSize;
 
         //check for a valid number of cards in the deck
-        if (cardCount >= 3 && cardCount <= 1000) {
+        if (cardCount >= 3 && cardCount <= 10000) {
             m_cardCount = cardCount;
 
             //check for a valid numberMax
