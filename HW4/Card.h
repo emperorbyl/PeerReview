@@ -10,13 +10,16 @@
 
 class Card {
 private:
-    int m_size;
+    int m_size = 0;
     int** m_numbers;
-    int m_maxNum;
+    int m_maxNum = 0;
 
 public:
     Card(int size, int maxNum);
     ~Card();
+
+    int const getSize() {return m_size;}
+    int const getMaxNum() {return m_maxNum;}
 
     void const print(std::ostream& out);
     void const printBorder(std::ostream& out, int digits);

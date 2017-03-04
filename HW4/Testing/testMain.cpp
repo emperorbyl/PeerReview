@@ -19,8 +19,11 @@ int main()
 
     // TODO: Test your components
 
-    DeckTester deckTester;
-    deckTester.testConstructor();
+    CardTester cardTester;
+    cardTester.testConstructor();
+
+    //DeckTester deckTester;
+    //deckTester.testConstructor();
 
 //    MenuOptionTester menuOptionTester;
 //    menuOptionTester.testConstructorAndGetter();
