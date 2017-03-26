@@ -5,6 +5,15 @@
 #ifndef GEO_REGIONS_STATE_H
 #define GEO_REGIONS_STATE_H
 
+#include "Region.h"
+
+#include <string>
+
 // TODO: Finish definition for a State class
+class State : public Region
+{
+public:
+    State(const std::string data[]);
+};
 
 #endif //GEO_REGIONS_STATE_H

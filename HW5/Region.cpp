@@ -66,14 +66,21 @@ Region* Region::create(RegionType regionType, const std::string& data)
             case NationType:
                 region = new Nation(fields);
                 break;
-       // TODO: Add cases for State, County, and City
+       // DONE: Add cases for State, County, and City
             case StateType:
-//                region = new State(fields);
+                region = new State(fields);
+                break;
+            case CountyType:
+                region = new County(fields);
+                break;
+            case CityType:
+                region = new City(fields);
+                break;
             default:
                 break;
         }
 
-        // If the region isn't valid, git ride of it
+        // If the region isn't valid, get ride of it
         if (region != nullptr && !region->getIsValid()) {
             delete region;
             region = nullptr;
@@ -192,6 +199,10 @@ void Region::validate()
     m_isValid = (m_area!=UnknownRegionType && m_name!="" && m_area>=0);
 }
 
+/**
+ * recursive function that reads in
+ * @param in
+ */
 void Region::loadChildren(std::istream& in)
 {
     std::string line;
@@ -210,11 +221,16 @@ void Region::loadChildren(std::istream& in)
             if (child!= nullptr)
             {
                 // TODO: Add the new sub-region to this region
+                addChild(child);
                 child->loadChildren(in);
             }
         }
     }
 }
+
+/**
+ * @return the next Region ID that hasn't been used
+ */
 
 unsigned int Region::getNextId()
 {
@@ -224,14 +240,33 @@ unsigned int Region::getNextId()
     return m_nextId++;
 }
 
-void Region::initSubs(){
-    m_subRegions = new Region[4];
+/**
+ * grows the subRegion array to be twice the size using a temporary  array
+ */
+void Region::growSubs(){
+    m_allocated = m_allocated * 2;
+    Region** newSubs = new Region*[m_allocated];
+    for (int i = 0; i < m_subCount; i++) newSubs[i] = m_subRegions[i];
+    delete [] m_subRegions;
+    m_subRegions = newSubs;
 }
 
-void Region::growSubs(){
-    Region* newSubs = new Region[m_subCount*2];
-    for (int i = 0; i < m_subCount; i++){
-        newSubs[i] = m_subRegions[i];
+/**
+ * Adds newChild to the dynamic SubRegion array
+ * First checks to see if m_subRegions has been initialized (if m_allocated == 0),
+ * and initializes if necessary, and then calls growSubs if necessary, and
+ * then finally adds the newChild to the array and increments subCount
+ *
+ * @param newChild the new Region pointer to be added
+ */
+void Region::addChild(Region* newChild){
+    if(m_allocated == 0)
+    {
+        m_allocated++;
+        m_subRegions = new Region*[1];
+        m_subRegions[0] = newChild;
     }
-    m_subRegions = newSubs;
+    else if (m_subCount == m_allocated) growSubs();
+
+    m_subRegions[m_subCount++] = newChild;
 }

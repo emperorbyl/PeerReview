@@ -18,9 +18,10 @@ protected:
     unsigned int    m_population = 0;
     double          m_area = 0;
     bool            m_isValid = false;
+    unsigned int    m_allocated = 0;
 
     // TODO: Add data members to manage sub-regions
-    Region* m_subRegions = nullptr;
+    Region** m_subRegions = nullptr;
     int m_subCount = 0;
 
 private:
@@ -52,6 +53,7 @@ public:
     bool getIsValid() const { return m_isValid; }
 
     // TODO: Add methods to manage sub-regions
+    void addChild(Region* newChild);
 
     // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();
