@@ -67,6 +67,8 @@ Region* Region::create(RegionType regionType, const std::string& data)
                 region = new Nation(fields);
                 break;
        // TODO: Add cases for State, County, and City
+            case StateType:
+//                region = new State(fields);
             default:
                 break;
         }
@@ -220,4 +222,16 @@ unsigned int Region::getNextId()
         m_nextId=1;
 
     return m_nextId++;
+}
+
+void Region::initSubs(){
+    m_subRegions = new Region[4];
+}
+
+void Region::growSubs(){
+    Region* newSubs = new Region[m_subCount*2];
+    for (int i = 0; i < m_subCount; i++){
+        newSubs[i] = m_subRegions[i];
+    }
+    m_subRegions = newSubs;
 }

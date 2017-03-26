@@ -20,6 +20,8 @@ protected:
     bool            m_isValid = false;
 
     // TODO: Add data members to manage sub-regions
+    Region* m_subRegions = nullptr;
+    int m_subCount = 0;
 
 private:
     static unsigned int m_nextId;
@@ -33,6 +35,8 @@ public:
 protected:
     Region();
     Region(RegionType type, const std::string data[]);
+    void initSubs();
+    void growSubs();
 
 public:
     ~Region();

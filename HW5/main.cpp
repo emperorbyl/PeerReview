@@ -12,7 +12,7 @@ int main()
     World* world;
 
     // Load if from the data file, if possible
-    std::ifstream inputStream("Nations.txt");
+    std::ifstream inputStream("sampleData-4.txt");
     if (inputStream.is_open())
     {
         // Try to load the first region in the field, which should be a world, and all of it's sub-regions
@@ -21,7 +21,7 @@ int main()
         {
             world = (World*) region;
             // TODO: Add an output line, similar to the sample code in the comment below
-            // std::cout << "Loaded a world and "  << world->getSubRegionCount() << " nations from Nations.txt" << std::endl;
+            //std::cout << "Loaded a world and "  << world->getSubRegionCount() << " nations from Nations.txt" << std::endl;
         }
         else
         {

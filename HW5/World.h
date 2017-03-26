@@ -10,6 +10,10 @@
 class World : public Region {
 public:
     World();
+private:
+    Region* subRegions;
+    int subCount;
+
 };
 
 
