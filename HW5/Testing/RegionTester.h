@@ -14,6 +14,7 @@ public:
     void testGettersAndSetters();
     void testSubRegions();
     void testComputeTotalPopulation();
+    void testDisplayAndListAndSave();
 };
 
 

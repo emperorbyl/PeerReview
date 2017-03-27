@@ -28,5 +28,6 @@ int main() {
     regionTester.testGettersAndSetters();
     regionTester.testSubRegions();
     regionTester.testComputeTotalPopulation();
+    regionTester.testDisplayAndListAndSave();
 
 }

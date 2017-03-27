@@ -555,3 +555,43 @@ void RegionTester::testComputeTotalPopulation()
     }
 
 }
+
+void RegionTester::testDisplayAndListAndSave(){
+    //since this one has so much output, it's hard to check with if statements, so
+    //I print the output and check it myself to make sure it looks right
+    std::string inputString = "Earth,0,5101000";
+
+    Region *region = Region::create(Region::WorldType, inputString);
+
+    Region *nation01 = Region::create(Region::NationType, "USA,1000,700");
+    Region *nation02 = Region::create(Region::NationType, "USSR,1000,1000");
+
+    region->addChild(nation01);
+    region->addChild(nation02);
+
+    Region *state01 = Region::create(Region::StateType, "Utah,1000,234");
+    Region *state02 = Region::create(Region::StateType, "Nevada,1000,23523");
+    Region *state03 = Region::create(Region::StateType, "Idaho,1000,324");
+
+    nation01->addChild(state01);
+    nation01->addChild(state02);
+    nation01->addChild(state03);
+
+    Region *county01 = Region::create(Region::CountyType, "Cache,1000,1000");
+    Region *county02 = Region::create(Region::CountyType, "Box Elder,1000,1000");
+
+    state01->addChild(county01);
+    state01->addChild(county02);
+
+    std::cout << "Displaying Region: " << std::endl << std::endl;
+    region->display(std::cout,0,true);
+
+    std::cout << "Listing Region: " << std::endl << std::endl;
+    region->list(std::cout);
+
+    std::ofstream fout;
+    fout.open("testSave.txt");
+    if(fout.is_open()){
+        region->save(fout);
+    }
+}
