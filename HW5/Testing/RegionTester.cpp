@@ -496,6 +496,24 @@ void RegionTester::testSubRegions()
             return;
         }
 
+        Region *county01 = Region::create(Region::CountyType, "Cache,1000,1000");
+        Region *county02 = Region::create(Region::CountyType, "Box Elder,1000,1000");
+
+        state01->addChild(county01);
+        state01->addChild(county02);
+        {
+            Region* testRegion = region->getSubRegionByIndex(0)->getSubRegionByIndex(0);
+            if(testRegion->getSubRegionByIndex(0) != county01){
+                std::cout << "Failed to add \"Cache,1000,1000\" to State: Utah" << std::endl;
+                return;
+            }
+            if(testRegion->getSubRegionCount() != 2){
+                std::cout << "Failed to add both counties to state01 (UTAH). SubRegionCount = "
+                          << testRegion->getSubRegionCount() << " should be 2" << std::endl;
+            }
+        }
+
+
     }
 }
 
@@ -504,4 +522,36 @@ void RegionTester::testComputeTotalPopulation()
     std::cout << "RegionTester::testComputeTotalPopulation" << std::endl;
 
     // TODO: Add test cases for computeTotalPopulation
+    {
+        std::string inputString = "Earth,0,5101000";
+
+        Region *region = Region::create(Region::WorldType, inputString);
+
+        Region *nation01 = Region::create(Region::NationType, "USA,1000,700");
+        Region *nation02 = Region::create(Region::NationType, "USSR,1000,1000");
+
+        region->addChild(nation01);
+        region->addChild(nation02);
+
+        Region *state01 = Region::create(Region::StateType, "Utah,1000,234");
+        Region *state02 = Region::create(Region::StateType, "Nevada,1000,23523");
+        Region *state03 = Region::create(Region::StateType, "Idaho,1000,324");
+
+        nation01->addChild(state01);
+        nation01->addChild(state02);
+        nation01->addChild(state03);
+
+        Region *county01 = Region::create(Region::CountyType, "Cache,1000,1000");
+        Region *county02 = Region::create(Region::CountyType, "Box Elder,1000,1000");
+
+        state01->addChild(county01);
+        state02->addChild(county02);
+
+        if (region->computeTotalPopulation() != 7000) {
+            std::cout << "failed to computeTotalPopulation of Region. Total pop. = "
+                      << region->computeTotalPopulation() << " should be 7000." << std::endl;
+            return;
+        }
+    }
+
 }

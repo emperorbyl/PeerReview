@@ -11,6 +11,7 @@
 #include "City.h"
 
 #include <iomanip>
+#include <iostream>
 
 const std::string regionDelimiter = "^^^";
 const int TAB_SIZE = 4;
@@ -130,6 +131,15 @@ Region::Region(RegionType type, const std::string data[]) :
 Region::~Region()
 {
     // TODO: cleanup any dynamically allocated objects
+    if (m_subCount > 0){
+        for(int i = 0; i < m_subCount; i++){
+            std::cout << "deleting " << m_subRegions[i]->getName() << std::endl;
+            delete m_subRegions[i];
+        }
+        delete[] m_subRegions;
+    }
+    m_allocated = 0;
+    m_subCount = 0;
 }
 
 std::string Region::getRegionLabel() const
@@ -140,6 +150,14 @@ std::string Region::getRegionLabel() const
 unsigned int Region::computeTotalPopulation()
 {
     // TODO: implement computeTotalPopulation, such that the result is m_population + the total population for all sub-regions
+    if(m_subCount == 0) return m_population;
+    else {
+        int subPopulations = 0;
+        for(int i = 0; i < m_subCount; i++){
+            subPopulations += m_subRegions[i]->computeTotalPopulation();
+        }
+        return m_population + subPopulations;
+    }
 }
 
 void Region::list(std::ostream& out)
