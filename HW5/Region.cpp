@@ -194,14 +194,18 @@ void Region::save(std::ostream& out)
     out << regionDelimiter << std::endl;
 }
 
+/**
+ * function that ensures all data in the created Region is valid
+ */
 void Region::validate()
 {
     m_isValid = (m_area!=UnknownRegionType && m_name!="" && m_area>=0);
 }
 
 /**
- * recursive function that reads in
- * @param in
+ * recursive function that reads in lines from the "in" stream and adds them as subRegions
+ * until the ^^^ delimiter line is reached in the stream
+ * @param in the input stream
  */
 void Region::loadChildren(std::istream& in)
 {

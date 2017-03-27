@@ -18,11 +18,11 @@ protected:
     unsigned int    m_population = 0;
     double          m_area = 0;
     bool            m_isValid = false;
-    unsigned int    m_allocated = 0;
 
     // TODO: Add data members to manage sub-regions
-    Region** m_subRegions = nullptr;
-    int m_subCount = 0;
+    Region**        m_subRegions = nullptr;
+    int             m_subCount = 0;
+    unsigned int    m_allocated = 0;
 
 private:
     static unsigned int m_nextId;
@@ -36,7 +36,6 @@ public:
 protected:
     Region();
     Region(RegionType type, const std::string data[]);
-    void initSubs();
     void growSubs();
 
 public:
@@ -52,8 +51,11 @@ public:
     void setArea(double area) { m_area = area; }
     bool getIsValid() const { return m_isValid; }
 
+
     // TODO: Add methods to manage sub-regions
     void addChild(Region* newChild);
+    int getSubRegionCount() const { return m_subCount; }
+    Region* getSubRegionByIndex(int nationIndex) const {return m_subRegions[nationIndex];}
 
     // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();

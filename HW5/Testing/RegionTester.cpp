@@ -5,6 +5,7 @@
 #include "RegionTester.h"
 
 #include "../Region.h"
+#include "../Nation.h"
 
 #include <iostream>
 #include <fstream>
@@ -447,6 +448,55 @@ void RegionTester::testSubRegions()
     std::cout << "RegionTester::testSubRegions" << std::endl;
 
     // TODO: Add test cases for managing sub-regions
+
+    {
+        std::string inputString = "Earth,0,5101000";
+        Region *region = Region::create(Region::WorldType,inputString);
+        if (region == nullptr) {
+            std::cout << "Failed to create a region from " << inputString << std::endl;
+            return;
+        }
+
+        //Test that nations can be created and added to an empty World
+        //This tests both the growSubs() function and the addChild(*Region) function
+        Region *nation01 = Region::create(Region::NationType, "USA,1000,700");
+        Region *nation02 = Region::create(Region::NationType, "USSR,0,0");
+
+        region->addChild(nation01);
+        region->addChild(nation02);
+
+        if(region->getSubRegionByIndex(0) != nation01){
+            std::cout << "Failed to add nation01 to region." << std::endl;
+            return;
+        }
+
+        if(region->getSubRegionCount() != 2) {
+            std::cout << "Failed to add both nations to region. SubRegionCount = "
+                      << region->getSubRegionCount() << " should be 2" << std::endl;
+            return;
+        }
+
+        //Now test to see if we can add States to the USA
+        Region *state01 = Region::create(Region::StateType, "Utah,425,234");
+        Region *state02 = Region::create(Region::StateType, "Nevada,2352,23523");
+        Region *state03 = Region::create(Region::StateType, "Idaho,62,324");
+
+        nation01->addChild(state01);
+        nation01->addChild(state02);
+        nation01->addChild(state03);
+
+        if(region->getSubRegionByIndex(0)->getSubRegionByIndex(0) != state01){
+            std::cout << "Failed to add \"Utah,425,234\" to the USA" << std::endl;
+            return;
+        }
+        if(region->getSubRegionByIndex(0)->getSubRegionCount() != 3) {
+            std::cout << "Failed to add both states to region. SubRegionCount = "
+                      <<region->getSubRegionByIndex(0)->getSubRegionCount()
+                      << "should be 3" << std::endl;
+            return;
+        }
+
+    }
 }
 
 void RegionTester::testComputeTotalPopulation()
