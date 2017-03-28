@@ -447,73 +447,96 @@ void RegionTester::testSubRegions()
 {
     std::cout << "RegionTester::testSubRegions" << std::endl;
 
-    // TODO: Add test cases for managing sub-regions
+    // DONE: Add test cases for adding sub-regions
+    // DONE: Add test cases for deleting sub-regions
+    // DONE: Add test cases for getSubRegionByIndex
+
+    std::string inputString = "Earth,0,5101000";
+    Region *region = Region::create(Region::WorldType,inputString);
+    if (region == nullptr) {
+        std::cout << "Failed to create a region from " << inputString << std::endl;
+        return;
+    }
+
+    //Test that nations can be created and added to an empty World
+    //This tests both the growSubs() function and the addChild(*Region) function
+    Region *nation01 = Region::create(Region::NationType, "USA,1000,700");
+    Region *nation02 = Region::create(Region::NationType, "USSR,1000,1000");
+
+    Region *state01 = Region::create(Region::StateType, "Utah,1000,234");
+    Region *state02 = Region::create(Region::StateType, "Nevada,1000,23523");
+    Region *state03 = Region::create(Region::StateType, "Idaho,1000,324");
+
+    Region *county01 = Region::create(Region::CountyType, "Cache,1000,1000");
+    Region *county02 = Region::create(Region::CountyType, "Box Elder,1000,1000");
+
+    region->addChild(nation01);
+    region->addChild(nation02);
+
+    if(region->getSubRegionByIndex(0) != nation01){
+        std::cout << "Failed to add nation01 to region." << std::endl;
+        return;
+    }
+
+    if(region->getSubRegionCount() != 2) {
+        std::cout << "Failed to add both nations to region. SubRegionCount = "
+                  << region->getSubRegionCount() << " should be 2" << std::endl;
+        return;
+    }
+
+    nation01->addChild(state01);
+    nation01->addChild(state02);
+    nation01->addChild(state03);
+
+    Region* testRegion = region->getSubRegionByIndex(0);
+    if(testRegion->getSubRegionByIndex(0) != state01){
+        std::cout << "Failed to add \"Utah,425,234\" to the USA" << std::endl;
+        return;
+    }
+
+    if(testRegion->getSubRegionCount() != 3) {
+        std::cout << "Failed to add both states to region. SubRegionCount = "
+                  << region->getSubRegionByIndex(0)->getSubRegionCount()
+                  << "should be 3" << std::endl;
+        return;
+    }
+
+    state01->addChild(county01);
+    state01->addChild(county02);
+    testRegion = region->getSubRegionByIndex(0)->getSubRegionByIndex(0);
+
+    if(testRegion->getSubRegionByIndex(0) != county01){
+        std::cout << "Failed to add \"Cache,1000,1000\" to State: Utah" << std::endl;
+        return;
+    }
+
+    if(testRegion->getSubRegionCount() != 2){
+        std::cout << "Failed to add both counties to state01 (UTAH). SubRegionCount = "
+                  << testRegion->getSubRegionCount() << " should be 2" << std::endl;
+        return;
+    }
+
+
+    //Now test that delete works correctly
+
+    nation01->deleteByIndex(0);
+
 
     {
-        std::string inputString = "Earth,0,5101000";
-        Region *region = Region::create(Region::WorldType,inputString);
-        if (region == nullptr) {
-            std::cout << "Failed to create a region from " << inputString << std::endl;
+        Region* testNation = region->getSubRegionByIndex(0)->getSubRegionByIndex(0);
+        if(testNation != state02){
+            std::cout << "Failed to delete state01(\"Utah,1000,1000\"). m_subRegions[0].getName() = "
+                      << testNation->getName() << std::endl;
             return;
         }
 
-        //Test that nations can be created and added to an empty World
-        //This tests both the growSubs() function and the addChild(*Region) function
-        Region *nation01 = Region::create(Region::NationType, "USA,1000,700");
-        Region *nation02 = Region::create(Region::NationType, "USSR,0,0");
-
-        region->addChild(nation01);
-        region->addChild(nation02);
-
-        if(region->getSubRegionByIndex(0) != nation01){
-            std::cout << "Failed to add nation01 to region." << std::endl;
+        testNation = region;
+        if(testNation->computeTotalPopulation() != 4000){
+            std::cout << "Failed to properly delete state01(\"Utah,1000,1000\"). testNation->"
+                      << "computeTotalPopulation() = " << testNation->computeTotalPopulation()
+                      << " should be 4000." << std::endl;
             return;
         }
-
-        if(region->getSubRegionCount() != 2) {
-            std::cout << "Failed to add both nations to region. SubRegionCount = "
-                      << region->getSubRegionCount() << " should be 2" << std::endl;
-            return;
-        }
-
-        //Now test to see if we can add States to the USA
-        Region *state01 = Region::create(Region::StateType, "Utah,425,234");
-        Region *state02 = Region::create(Region::StateType, "Nevada,2352,23523");
-        Region *state03 = Region::create(Region::StateType, "Idaho,62,324");
-
-        nation01->addChild(state01);
-        nation01->addChild(state02);
-        nation01->addChild(state03);
-
-        if(region->getSubRegionByIndex(0)->getSubRegionByIndex(0) != state01){
-            std::cout << "Failed to add \"Utah,425,234\" to the USA" << std::endl;
-            return;
-        }
-        if(region->getSubRegionByIndex(0)->getSubRegionCount() != 3) {
-            std::cout << "Failed to add both states to region. SubRegionCount = "
-                      <<region->getSubRegionByIndex(0)->getSubRegionCount()
-                      << "should be 3" << std::endl;
-            return;
-        }
-
-        Region *county01 = Region::create(Region::CountyType, "Cache,1000,1000");
-        Region *county02 = Region::create(Region::CountyType, "Box Elder,1000,1000");
-
-        state01->addChild(county01);
-        state01->addChild(county02);
-        {
-            Region* testRegion = region->getSubRegionByIndex(0)->getSubRegionByIndex(0);
-            if(testRegion->getSubRegionByIndex(0) != county01){
-                std::cout << "Failed to add \"Cache,1000,1000\" to State: Utah" << std::endl;
-                return;
-            }
-            if(testRegion->getSubRegionCount() != 2){
-                std::cout << "Failed to add both counties to state01 (UTAH). SubRegionCount = "
-                          << testRegion->getSubRegionCount() << " should be 2" << std::endl;
-            }
-        }
-
-
     }
 }
 
@@ -521,7 +544,7 @@ void RegionTester::testComputeTotalPopulation()
 {
     std::cout << "RegionTester::testComputeTotalPopulation" << std::endl;
 
-    // TODO: Add test cases for computeTotalPopulation
+    // DONE: Add test cases for computeTotalPopulation
     {
         std::string inputString = "Earth,0,5101000";
 
@@ -559,6 +582,7 @@ void RegionTester::testComputeTotalPopulation()
 void RegionTester::testDisplayAndListAndSave(){
     //since this one has so much output, it's hard to check with if statements, so
     //I print the output and check it myself to make sure it looks right
+    std::cout << "RegionTester::testDisplayAndListAndSave" << std::endl;
     std::string inputString = "Earth,0,5101000";
 
     Region *region = Region::create(Region::WorldType, inputString);

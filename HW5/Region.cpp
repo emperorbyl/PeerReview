@@ -131,13 +131,8 @@ Region::Region(RegionType type, const std::string data[]) :
 Region::~Region()
 {
     // DONE: cleanup any dynamically allocated objects
-    if (m_subCount > 0){
-        for(int i = 0; i < m_subCount; i++){
-            std::cout << "deleting " << m_subRegions[i]->getName() << std::endl;
-            delete m_subRegions[i];
-        }
-        delete[] m_subRegions;
-    }
+    delete[] m_subRegions;
+    m_subRegions = nullptr;
     m_allocated = 0;
     m_subCount = 0;
 }
@@ -299,4 +294,26 @@ void Region::addChild(Region* newChild){
     else if (m_subCount == m_allocated) growSubs();
 
     m_subRegions[m_subCount++] = newChild;
+}
+
+bool Region::deleteByIndex(int index){
+    int maxIndex = m_subCount - 1;
+    if(index > maxIndex) return false;
+    else {
+        delete m_subRegions[index];
+        int emptyIndex = index;
+        while(emptyIndex < maxIndex){
+            m_subRegions[emptyIndex] = m_subRegions[emptyIndex+1];
+            emptyIndex++;
+        }
+        m_subRegions[maxIndex] = nullptr;
+        m_subCount--;
+        return true;
+    }
+}
+
+Region* Region::getSubRegionByIndex(int nationIndex) const {
+    Region* region = nullptr;
+    if(nationIndex < m_subCount) region = m_subRegions[nationIndex];
+    return region;
 }

@@ -4,7 +4,7 @@
 
 #include "State.h"
 
-// TODO: implement State class functionality
+// DONE: implement State class functionality
 
 State::State(const std::string data[]) : Region(StateType, data)
 {

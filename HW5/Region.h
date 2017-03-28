@@ -50,12 +50,13 @@ public:
     double getArea() const { return m_area; }
     void setArea(double area) { m_area = area; }
     bool getIsValid() const { return m_isValid; }
+    bool deleteByIndex(int index);
 
 
     // DONE: Add methods to manage sub-regions
     void addChild(Region* newChild);
     int getSubRegionCount() const { return m_subCount; }
-    Region* getSubRegionByIndex(int nationIndex) const {return m_subRegions[nationIndex];}
+    Region* getSubRegionByIndex(int nationIndex) const;
 
     // DONE: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();
@@ -69,7 +70,8 @@ protected:
     void loadChildren(std::istream& in);
     static unsigned int getNextId();
 
-    // TODO: add whatever other helper methods you might need
+    // DONE: add whatever other helper methods you might need
+    //Added some methods elsewhere in this file
 };
 
 

@@ -9,7 +9,7 @@
 
 #include <string>
 
-// TODO: Finish definition for a State class
+// DONE: Finish definition for a State class
 class State : public Region
 {
 public:
