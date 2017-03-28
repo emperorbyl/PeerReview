@@ -16,6 +16,9 @@
 const std::string regionDelimiter = "^^^";
 const int TAB_SIZE = 4;
 unsigned int Region::m_nextId = 0;
+unsigned int Region::m_totalAllocated = 0;
+unsigned int Region::m_totalCount = 0;
+Region** Region::m_allRegions = nullptr;
 
 Region* Region::create(std::istream &in)
 {
@@ -122,19 +125,25 @@ Region::Region() { }
 Region::Region(RegionType type, const std::string data[]) :
         m_id(getNextId()), m_regionType(type), m_isValid(true)
 {
+
     m_name = data[0];
     m_population = convertStringToUnsignedInt(data[1], &m_isValid);
     if (m_isValid)
         m_area = convertStringToDouble(data[2], &m_isValid);
+    if (m_isValid)
+        addByID(this);
 }
 
 Region::~Region()
 {
     // DONE: cleanup any dynamically allocated objects
     delete[] m_subRegions;
+    m_allRegions[m_id] = nullptr;
     m_subRegions = nullptr;
     m_allocated = 0;
     m_subCount = 0;
+    m_totalCount--;
+    m_allRegions[m_id] = nullptr;
 }
 
 std::string Region::getRegionLabel() const
@@ -268,12 +277,12 @@ unsigned int Region::getNextId()
 /**
  * grows the subRegion array to be twice the size using a temporary  array
  */
-void Region::growSubs(){
-    m_allocated = m_allocated * 2;
-    Region** newSubs = new Region*[m_allocated];
-    for (int i = 0; i < m_subCount; i++) newSubs[i] = m_subRegions[i];
-    delete [] m_subRegions;
-    m_subRegions = newSubs;
+Region** Region::growArray(Region** array, unsigned int &allocated, int regions){
+    allocated = allocated * 2;
+    Region** newArray = new Region*[allocated];
+    for (int i = 0; i < regions; i++) newArray[i] = array[i];
+    delete [] array;
+    return newArray;
 }
 
 /**
@@ -289,9 +298,8 @@ void Region::addChild(Region* newChild){
     {
         m_allocated++;
         m_subRegions = new Region*[1];
-        m_subRegions[0] = newChild;
     }
-    else if (m_subCount == m_allocated) growSubs();
+    else if (m_subCount == m_allocated) m_subRegions = growArray(m_subRegions, m_allocated, m_subCount);
 
     m_subRegions[m_subCount++] = newChild;
 }
@@ -316,4 +324,31 @@ Region* Region::getSubRegionByIndex(int nationIndex) const {
     Region* region = nullptr;
     if(nationIndex < m_subCount) region = m_subRegions[nationIndex];
     return region;
+}
+
+Region* Region::getRegionByID(int id){
+    Region* region = nullptr;
+    if (id < m_totalAllocated) region = m_allRegions[id];
+    return region;
+}
+
+void Region::addByID(Region* region){
+    if(m_totalCount == 0) {
+        m_totalAllocated++;
+        m_allRegions = new Region*[1];
+    }
+    else if(m_totalAllocated == m_totalCount) m_allRegions = growArray(m_allRegions, m_totalAllocated, m_totalCount);
+
+    m_allRegions[m_totalCount] = region;
+    m_totalCount++;
+}
+
+bool Region::deleteByID(int id){
+    bool deleted = false;
+    if(id < m_totalCount && m_allRegions[id]!=nullptr) {
+        deleted = true;
+        delete m_allRegions[id];
+        m_allRegions[id] = nullptr;
+    }
+    return deleted;
 }

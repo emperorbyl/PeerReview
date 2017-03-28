@@ -122,8 +122,8 @@ void UserInterface::edit()
         unsigned int id = convertStringToUnsignedInt(input, &valid);
         if (valid && id>0)
         {
-            Region* region;
-            // TODO: Look the region by Id and assign it to region variable
+            Region* region = Region::getRegionByID(id);
+            // DONE: Look the region by Id and assign it to region variable
             if (region!=nullptr)
             {
                 std::cout << "Editing: ";
@@ -215,9 +215,9 @@ void UserInterface::remove()
     {
         bool valid;
         unsigned int id = convertStringToUnsignedInt(input, &valid);
-        if (valid && id>0)
+        if (valid && id>0 && Region::deleteByID(id))
         {
-            // TODO: Look up the region by Id and assign it to the region variable
+            // DONE: Look up the region by Id and assign it to the region variable
             std::cout << "Deleted!" << std::endl;
         }
         else
@@ -246,7 +246,8 @@ void UserInterface::changeToSubRegion()
         if (valid && id>0)
         {
             Region* region;
-            // TODO: Lookup the region by Id and assign it to the region variable.
+            //DONE: Lookup the region by Id and assign it to the region variable.
+            region = Region::getRegionByID(id);
             if (region!=nullptr)
             {
                 UserInterface* nextUI = nullptr;

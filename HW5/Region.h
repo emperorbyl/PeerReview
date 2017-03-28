@@ -36,7 +36,7 @@ public:
 protected:
     Region();
     Region(RegionType type, const std::string data[]);
-    void growSubs();
+    Region** growArray(Region** array, unsigned int &allocated, int regions);
 
 public:
     ~Region();
@@ -71,6 +71,16 @@ protected:
     static unsigned int getNextId();
 
     // DONE: add whatever other helper methods you might need
+    //methods and data members used for ID handling of all Regions created
+    static Region** m_allRegions;
+    static unsigned int m_totalAllocated;
+    static unsigned int m_totalCount;
+    void addByID(Region* region);
+public:
+    static Region* getRegionByID(int id);
+    static bool deleteByID(int id);
+
+
     //Added some methods elsewhere in this file
 };
 

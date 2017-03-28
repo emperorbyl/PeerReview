@@ -459,7 +459,7 @@ void RegionTester::testSubRegions()
     }
 
     //Test that nations can be created and added to an empty World
-    //This tests both the growSubs() function and the addChild(*Region) function
+    //This tests both the growArray() function and the addChild(*Region) function
     Region *nation01 = Region::create(Region::NationType, "USA,1000,700");
     Region *nation02 = Region::create(Region::NationType, "USSR,1000,1000");
 

@@ -12,7 +12,7 @@ int main()
     World* world;
 
     // Load if from the data file, if possible
-    std::ifstream inputStream("sampleData-4.txt");
+    std::ifstream inputStream("nations.txt");
     if (inputStream.is_open())
     {
         // Try to load the first region in the field, which should be a world, and all of it's sub-regions
