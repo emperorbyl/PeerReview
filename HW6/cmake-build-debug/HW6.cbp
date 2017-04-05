@@ -80,6 +80,21 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW6/Dictionary.cpp">
+			<Option target="HW6"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW6/Dictionary.h">
+			<Option target="HW6"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW6/KeyValue.cpp">
+			<Option target="HW6"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW6/KeyValue.h">
+			<Option target="HW6"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW6/Testing/testMain.cpp.cpp">
+			<Option target="HW6"/>
+		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW6/main.cpp">
 			<Option target="HW6"/>
 		</Unit>

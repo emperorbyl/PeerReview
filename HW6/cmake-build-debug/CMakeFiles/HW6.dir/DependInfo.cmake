@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Justin Fairbourn/cs1440/HW6/Dictionary.cpp" "C:/Users/Justin Fairbourn/cs1440/HW6/cmake-build-debug/CMakeFiles/HW6.dir/Dictionary.cpp.obj"
+  "C:/Users/Justin Fairbourn/cs1440/HW6/KeyValue.cpp" "C:/Users/Justin Fairbourn/cs1440/HW6/cmake-build-debug/CMakeFiles/HW6.dir/KeyValue.cpp.obj"
+  "C:/Users/Justin Fairbourn/cs1440/HW6/Testing/testMain.cpp.cpp" "C:/Users/Justin Fairbourn/cs1440/HW6/cmake-build-debug/CMakeFiles/HW6.dir/Testing/testMain.cpp.cpp.obj"
   "C:/Users/Justin Fairbourn/cs1440/HW6/main.cpp" "C:/Users/Justin Fairbourn/cs1440/HW6/cmake-build-debug/CMakeFiles/HW6.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

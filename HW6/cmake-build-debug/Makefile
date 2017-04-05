@@ -122,6 +122,87 @@ HW6/fast:
 	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/build
 .PHONY : HW6/fast
 
+Dictionary.obj: Dictionary.cpp.obj
+
+.PHONY : Dictionary.obj
+
+# target to build an object file
+Dictionary.cpp.obj:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Dictionary.cpp.obj
+.PHONY : Dictionary.cpp.obj
+
+Dictionary.i: Dictionary.cpp.i
+
+.PHONY : Dictionary.i
+
+# target to preprocess a source file
+Dictionary.cpp.i:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Dictionary.cpp.i
+.PHONY : Dictionary.cpp.i
+
+Dictionary.s: Dictionary.cpp.s
+
+.PHONY : Dictionary.s
+
+# target to generate assembly for a file
+Dictionary.cpp.s:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Dictionary.cpp.s
+.PHONY : Dictionary.cpp.s
+
+KeyValue.obj: KeyValue.cpp.obj
+
+.PHONY : KeyValue.obj
+
+# target to build an object file
+KeyValue.cpp.obj:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/KeyValue.cpp.obj
+.PHONY : KeyValue.cpp.obj
+
+KeyValue.i: KeyValue.cpp.i
+
+.PHONY : KeyValue.i
+
+# target to preprocess a source file
+KeyValue.cpp.i:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/KeyValue.cpp.i
+.PHONY : KeyValue.cpp.i
+
+KeyValue.s: KeyValue.cpp.s
+
+.PHONY : KeyValue.s
+
+# target to generate assembly for a file
+KeyValue.cpp.s:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/KeyValue.cpp.s
+.PHONY : KeyValue.cpp.s
+
+Testing/testMain.cpp.obj: Testing/testMain.cpp.cpp.obj
+
+.PHONY : Testing/testMain.cpp.obj
+
+# target to build an object file
+Testing/testMain.cpp.cpp.obj:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Testing/testMain.cpp.cpp.obj
+.PHONY : Testing/testMain.cpp.cpp.obj
+
+Testing/testMain.cpp.i: Testing/testMain.cpp.cpp.i
+
+.PHONY : Testing/testMain.cpp.i
+
+# target to preprocess a source file
+Testing/testMain.cpp.cpp.i:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Testing/testMain.cpp.cpp.i
+.PHONY : Testing/testMain.cpp.cpp.i
+
+Testing/testMain.cpp.s: Testing/testMain.cpp.cpp.s
+
+.PHONY : Testing/testMain.cpp.s
+
+# target to generate assembly for a file
+Testing/testMain.cpp.cpp.s:
+	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Testing/testMain.cpp.cpp.s
+.PHONY : Testing/testMain.cpp.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +239,15 @@ help:
 	@echo ... HW6
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Dictionary.obj
+	@echo ... Dictionary.i
+	@echo ... Dictionary.s
+	@echo ... KeyValue.obj
+	@echo ... KeyValue.i
+	@echo ... KeyValue.s
+	@echo ... Testing/testMain.cpp.obj
+	@echo ... Testing/testMain.cpp.i
+	@echo ... Testing/testMain.cpp.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
