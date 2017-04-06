@@ -3,5 +3,15 @@ project(HW6)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp Testing/testMain.cpp Dictionary.cpp Dictionary.h KeyValue.cpp KeyValue.h)
-add_executable(HW6 ${SOURCE_FILES})
+set(SOURCE_FILES
+        Dictionary.cpp Dictionary.h
+        KeyValue.cpp KeyValue.h)
+
+add_executable(HW6 main.cpp ${SOURCE_FILES})
+
+set(TEST_FILES
+        Testing/testMain.cpp
+        Testing/KeyValueTester.cpp Testing/KeyValueTester.h
+        Testing/DictionaryTester.cpp Testing/DictionaryTester.h)
+
+add_executable(Test Testing/testMain.cpp ${SOURCE_FILES} ${TEST_FILES})

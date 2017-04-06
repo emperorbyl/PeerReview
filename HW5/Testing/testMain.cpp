@@ -10,7 +10,6 @@ int main() {
 
     std::cout << "Execute Test Cases" << std::endl;
 
-    /*
     UtilsTester utilsTester;
     utilsTester.testSplit();
     utilsTester.testConvertToInt();
@@ -19,7 +18,6 @@ int main() {
     utilsTester.testLeftTrim();
     utilsTester.testRightTrim();
     utilsTester.testTrim();
-     */
 
     RegionTester regionTester;
     regionTester.testCreateFromStream();
