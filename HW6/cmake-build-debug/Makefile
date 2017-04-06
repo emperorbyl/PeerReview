@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = "C:\Users\Justin Fairbourn\cs1440\HW6\cmake-build-debug"
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -123,17 +123,17 @@ HW6/fast:
 .PHONY : HW6/fast
 
 #=============================================================================
-# Target rules for targets named Test
+# Target rules for targets named Testing
 
 # Build rule for target.
-Test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Test
-.PHONY : Test
+Testing: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Testing
+.PHONY : Testing
 
 # fast build rule for target.
-Test/fast:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/build
-.PHONY : Test/fast
+Testing/fast:
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/build
+.PHONY : Testing/fast
 
 Dictionary.obj: Dictionary.cpp.obj
 
@@ -142,7 +142,7 @@ Dictionary.obj: Dictionary.cpp.obj
 # target to build an object file
 Dictionary.cpp.obj:
 	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Dictionary.cpp.obj
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Dictionary.cpp.obj
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Dictionary.cpp.obj
 .PHONY : Dictionary.cpp.obj
 
 Dictionary.i: Dictionary.cpp.i
@@ -152,7 +152,7 @@ Dictionary.i: Dictionary.cpp.i
 # target to preprocess a source file
 Dictionary.cpp.i:
 	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Dictionary.cpp.i
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Dictionary.cpp.i
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Dictionary.cpp.i
 .PHONY : Dictionary.cpp.i
 
 Dictionary.s: Dictionary.cpp.s
@@ -162,7 +162,7 @@ Dictionary.s: Dictionary.cpp.s
 # target to generate assembly for a file
 Dictionary.cpp.s:
 	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/Dictionary.cpp.s
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Dictionary.cpp.s
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Dictionary.cpp.s
 .PHONY : Dictionary.cpp.s
 
 KeyValue.obj: KeyValue.cpp.obj
@@ -172,7 +172,7 @@ KeyValue.obj: KeyValue.cpp.obj
 # target to build an object file
 KeyValue.cpp.obj:
 	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/KeyValue.cpp.obj
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/KeyValue.cpp.obj
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/KeyValue.cpp.obj
 .PHONY : KeyValue.cpp.obj
 
 KeyValue.i: KeyValue.cpp.i
@@ -182,7 +182,7 @@ KeyValue.i: KeyValue.cpp.i
 # target to preprocess a source file
 KeyValue.cpp.i:
 	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/KeyValue.cpp.i
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/KeyValue.cpp.i
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/KeyValue.cpp.i
 .PHONY : KeyValue.cpp.i
 
 KeyValue.s: KeyValue.cpp.s
@@ -192,7 +192,7 @@ KeyValue.s: KeyValue.cpp.s
 # target to generate assembly for a file
 KeyValue.cpp.s:
 	$(MAKE) -f CMakeFiles\HW6.dir\build.make CMakeFiles/HW6.dir/KeyValue.cpp.s
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/KeyValue.cpp.s
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/KeyValue.cpp.s
 .PHONY : KeyValue.cpp.s
 
 Testing/DictionaryTester.obj: Testing/DictionaryTester.cpp.obj
@@ -201,7 +201,7 @@ Testing/DictionaryTester.obj: Testing/DictionaryTester.cpp.obj
 
 # target to build an object file
 Testing/DictionaryTester.cpp.obj:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.obj
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/DictionaryTester.cpp.obj
 .PHONY : Testing/DictionaryTester.cpp.obj
 
 Testing/DictionaryTester.i: Testing/DictionaryTester.cpp.i
@@ -210,7 +210,7 @@ Testing/DictionaryTester.i: Testing/DictionaryTester.cpp.i
 
 # target to preprocess a source file
 Testing/DictionaryTester.cpp.i:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.i
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/DictionaryTester.cpp.i
 .PHONY : Testing/DictionaryTester.cpp.i
 
 Testing/DictionaryTester.s: Testing/DictionaryTester.cpp.s
@@ -219,7 +219,7 @@ Testing/DictionaryTester.s: Testing/DictionaryTester.cpp.s
 
 # target to generate assembly for a file
 Testing/DictionaryTester.cpp.s:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.s
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/DictionaryTester.cpp.s
 .PHONY : Testing/DictionaryTester.cpp.s
 
 Testing/KeyValueTester.obj: Testing/KeyValueTester.cpp.obj
@@ -228,7 +228,7 @@ Testing/KeyValueTester.obj: Testing/KeyValueTester.cpp.obj
 
 # target to build an object file
 Testing/KeyValueTester.cpp.obj:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.obj
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/KeyValueTester.cpp.obj
 .PHONY : Testing/KeyValueTester.cpp.obj
 
 Testing/KeyValueTester.i: Testing/KeyValueTester.cpp.i
@@ -237,7 +237,7 @@ Testing/KeyValueTester.i: Testing/KeyValueTester.cpp.i
 
 # target to preprocess a source file
 Testing/KeyValueTester.cpp.i:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.i
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/KeyValueTester.cpp.i
 .PHONY : Testing/KeyValueTester.cpp.i
 
 Testing/KeyValueTester.s: Testing/KeyValueTester.cpp.s
@@ -246,7 +246,7 @@ Testing/KeyValueTester.s: Testing/KeyValueTester.cpp.s
 
 # target to generate assembly for a file
 Testing/KeyValueTester.cpp.s:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.s
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/KeyValueTester.cpp.s
 .PHONY : Testing/KeyValueTester.cpp.s
 
 Testing/testMain.obj: Testing/testMain.cpp.obj
@@ -255,7 +255,7 @@ Testing/testMain.obj: Testing/testMain.cpp.obj
 
 # target to build an object file
 Testing/testMain.cpp.obj:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/testMain.cpp.obj
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/testMain.cpp.obj
 .PHONY : Testing/testMain.cpp.obj
 
 Testing/testMain.i: Testing/testMain.cpp.i
@@ -264,7 +264,7 @@ Testing/testMain.i: Testing/testMain.cpp.i
 
 # target to preprocess a source file
 Testing/testMain.cpp.i:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/testMain.cpp.i
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/testMain.cpp.i
 .PHONY : Testing/testMain.cpp.i
 
 Testing/testMain.s: Testing/testMain.cpp.s
@@ -273,7 +273,7 @@ Testing/testMain.s: Testing/testMain.cpp.s
 
 # target to generate assembly for a file
 Testing/testMain.cpp.s:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/testMain.cpp.s
+	$(MAKE) -f CMakeFiles\Testing.dir\build.make CMakeFiles/Testing.dir/Testing/testMain.cpp.s
 .PHONY : Testing/testMain.cpp.s
 
 main.obj: main.cpp.obj
@@ -310,9 +310,9 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... HW6
-	@echo ... rebuild_cache
-	@echo ... Test
+	@echo ... Testing
 	@echo ... edit_cache
+	@echo ... rebuild_cache
 	@echo ... Dictionary.obj
 	@echo ... Dictionary.i
 	@echo ... Dictionary.s

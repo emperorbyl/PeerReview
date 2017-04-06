@@ -1,11 +1,11 @@
 #include <iostream>
 
 #include "Dictionary.h"
-#include "KeyValue.h"
 
 int main() {
     std::cout << "Executing main" << std::endl;
     std::cout << "Creating Table 1 - Sample Directory" << std::endl;
+
 
     Dictionary<std::string, std::string> newDictionary(3);
 
@@ -14,4 +14,6 @@ int main() {
     newDictionary.add(new KeyValue<std::string, std::string>("Favorite Movie","Rogue One"));
     newDictionary.add(new KeyValue<std::string, std::string>("Favorite Food","Pizza"));
     newDictionary.add(new KeyValue<std::string, std::string>("Favorite Class","CS1440"));
+
+    
 }
