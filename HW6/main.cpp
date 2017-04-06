@@ -15,5 +15,11 @@ int main() {
     newDictionary.add(new KeyValue<std::string, std::string>("Favorite Food","Pizza"));
     newDictionary.add(new KeyValue<std::string, std::string>("Favorite Class","CS1440"));
 
+    try{
+        newDictionary.add(new KeyValue<std::string, std::string>("Hair Color","Red"));
+    }catch(char const* e){
+        std::cout << "Encountered error: " << e << std::endl;
+    }
+
     
 }

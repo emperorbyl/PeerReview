@@ -8,4 +8,5 @@
 int main(){
     KeyValueTester::testConstructors();
     DictionaryTester::testConstructors();
+    DictionaryTester::testAddAndGrow();
 }

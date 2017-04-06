@@ -8,6 +8,8 @@
 class DictionaryTester {
 public:
     static void testConstructors();
+    static void testAddAndGrow();
+    static void testGetByMethods();
 };
 
 
