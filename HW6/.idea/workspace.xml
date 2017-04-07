@@ -15,11 +15,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b456c15-caf2-48ed-a489-bd3c5a3533b8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GeneralDictionaryDesign.vpp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Dictionary.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyValue.cpp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dictionary.h" afterPath="$PROJECT_DIR$/Dictionary.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing/DictionaryTester.cpp" afterPath="$PROJECT_DIR$/Testing/DictionaryTester.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing/DictionaryTester.h" afterPath="$PROJECT_DIR$/Testing/DictionaryTester.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing/testMain.cpp" afterPath="$PROJECT_DIR$/Testing/testMain.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,36 +38,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testMain.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing/testMain.cpp">
+      <file leaf-file-name="Dictionary.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dictionary.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding>
-                <element signature="e#51#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DictionaryTester.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Testing/DictionaryTester.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="233" column="8" lean-forward="false" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
-              <folding>
-                <element signature="e#131#1837#0" expanded="false" />
-                <element signature="e#1839#5044#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DictionaryTester.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing/DictionaryTester.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="83">
+              <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -73,7 +51,7 @@
       <file leaf-file-name="KeyValue.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KeyValue.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="299">
               <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <marker date="1491499978223" expanded="true" signature="453:455" ph="{...}" />
@@ -82,12 +60,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dictionary.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dictionary.h">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="238">
+              <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,12 +85,12 @@
         <option value="$PROJECT_DIR$/Dictionary.cpp" />
         <option value="$PROJECT_DIR$/KeyValue.cpp" />
         <option value="$PROJECT_DIR$/KeyValue.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Testing/testMain.cpp" />
-        <option value="$PROJECT_DIR$/Dictionary.h" />
         <option value="$PROJECT_DIR$/Testing/DictionaryTester.h" />
+        <option value="$PROJECT_DIR$/Dictionary.h" />
         <option value="$PROJECT_DIR$/Testing/DictionaryTester.cpp" />
+        <option value="$PROJECT_DIR$/Testing/testMain.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -182,7 +162,7 @@
       <recent name="C:\Users\Justin Fairbourn\cs1440\HW6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Testing">
+  <component name="RunManager" selected="Application.HW6">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HW6" TARGET_NAME="HW6" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -388,7 +368,7 @@
       <workItem from="1491450941122" duration="1356000" />
       <workItem from="1491499664644" duration="592000" />
       <workItem from="1491514950114" duration="5914000" />
-      <workItem from="1491540045692" duration="418000" />
+      <workItem from="1491540045692" duration="2615000" />
     </task>
     <task id="LOCAL-00001" summary="Completed the .h files for Dictionary and KeyValue, implemented their constructors and the add/grow methods for Dictionary.&#10;Implemented a test suite for Dictionary constructors.">
       <created>1491435667084</created>
@@ -418,23 +398,30 @@
       <option name="project" value="LOCAL" />
       <updated>1491518475719</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created and implemented Dictionary::testGetByKey()">
+      <created>1491540533390</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1491540533390</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29958000" />
+    <option name="totallyTimeSpent" value="32155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25988287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30441642" sideWeight="0.670571" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27602524" sideWeight="0.5885798" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38801262" sideWeight="0.59516835" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27602524" sideWeight="0.4114202" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38801262" sideWeight="0.40483162" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -459,7 +446,8 @@
     <MESSAGE value="Created test suites for testKeyValueConstructors(). Implemented remove and add methods to Dictionary.cpp." />
     <MESSAGE value="My final commit for the night, I can't resolve the error I get that says &quot;undefined reference&quot; to my classes." />
     <MESSAGE value="Created and implemented DictionaryTester::testAddAndGrow(). Moved all of the code with template stuff to the .h files&#10;instead of the .cpp and it all works fine now. Took the .cpp files out of the CMakeLists.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created and implemented DictionaryTester::testAddAndGrow(). Moved all of the code with template stuff to the .h files&#10;instead of the .cpp and it all works fine now. Took the .cpp files out of the CMakeLists.txt" />
+    <MESSAGE value="Created and implemented Dictionary::testGetByKey()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created and implemented Dictionary::testGetByKey()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -473,7 +461,7 @@
         <state relative-caret-position="187">
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
-            <element signature="e#51#80#0" expanded="true" />
+            <element signature="e#51#80#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -485,6 +473,8 @@
           <folding>
             <element signature="e#131#1837#0" expanded="false" />
             <element signature="e#1839#5044#0" expanded="false" />
+            <element signature="e#5046#7387#0" expanded="false" />
+            <element signature="e#7389#10376#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -527,6 +517,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -534,6 +527,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -551,6 +545,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="80" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -574,6 +569,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -581,6 +579,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="1" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -599,6 +598,8 @@
           <folding>
             <element signature="e#131#1837#0" expanded="false" />
             <element signature="e#1839#5044#0" expanded="false" />
+            <element signature="e#5046#7387#0" expanded="false" />
+            <element signature="e#7389#10376#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -615,6 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -632,6 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,6 +658,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,6 +668,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -687,6 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -702,6 +710,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -724,6 +735,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,6 +753,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -747,6 +764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -754,6 +772,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -761,6 +780,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="80" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -780,38 +800,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Testing/testMain.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="204">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding>
-            <element signature="e#51#80#0" expanded="true" />
+            <element signature="e#51#80#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KeyValue.h">
+    <entry file="file://$PROJECT_DIR$/Testing/DictionaryTester.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="222" column="42" lean-forward="false" selection-start-line="222" selection-start-column="42" selection-end-line="222" selection-end-column="42" />
           <folding>
-            <marker date="1491499978223" expanded="true" signature="453:455" ph="{...}" />
+            <element signature="e#131#1837#0" expanded="false" />
+            <element signature="e#1839#5044#0" expanded="false" />
+            <element signature="e#5046#7387#0" expanded="false" />
+            <element signature="e#7389#10376#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dictionary.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,13 +831,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing/DictionaryTester.cpp">
+    <entry file="file://$PROJECT_DIR$/Dictionary.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="233" column="8" lean-forward="false" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
+        <state relative-caret-position="83">
+          <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KeyValue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#131#1837#0" expanded="false" />
-            <element signature="e#1839#5044#0" expanded="false" />
+            <marker date="1491499978223" expanded="true" signature="453:455" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

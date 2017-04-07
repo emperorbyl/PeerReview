@@ -54,6 +54,7 @@ public:
         //removeByIndex(found);
     }
     void removeByIndex(int i) {
+        if(i < 0 || i >= m_size) throw "INDEX OUT OF RANGE";
         delete m_dictionary[i];
         for(int j = i; j < m_size - 1; j++){
             m_dictionary[j] = m_dictionary[j+1];

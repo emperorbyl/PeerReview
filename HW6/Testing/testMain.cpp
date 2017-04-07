@@ -10,4 +10,5 @@ int main(){
     DictionaryTester::testConstructors();
     DictionaryTester::testAddAndGrow();
     DictionaryTester::testGetByKey();
+    DictionaryTester::testRemoveMethods();
 }

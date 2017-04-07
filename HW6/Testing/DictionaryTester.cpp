@@ -229,8 +229,83 @@ void DictionaryTester::testRemoveMethods(){
         KeyValue<int, int> pair1(1,6);
         KeyValue<int, int> pair2(2,6);
         KeyValue<int, int> pair3(3,4);
-        KeyValue<int, int> pair4(7000,3);
+        KeyValue<int, int> pair4(4,3);
 
 
+        testDictionary.add(&pair1);
+        testDictionary.add(&pair2);
+        testDictionary.add(&pair3);
+        testDictionary.add(&pair4);
+
+        testDictionary.removeByIndex(2);
+
+        {
+            if(testDictionary.getSize() != 3){
+                std::cout << "Error in testDictionary.removeByIndex(3): getSize() = "
+                          << testDictionary.getSize() << " should be 3" << std::endl;
+                return;
+            }
+        }
+
+        {
+            KeyValue<int,int>* testPair = testDictionary.getByIndex(2);
+
+            if(testPair->getValue() != 3 || testPair->getKey() != 4){
+                std::cout << "Error in testDictionary.removeByIndex(3): getByIndex(3) = ("
+                          << testPair->getKey() << "," << testPair->getValue()
+                          << ") should be (4,3)" << std::endl;
+                return;
+            }
+        }
+
+        try{
+            testDictionary.removeByIndex(-1);
+        }catch(char const* e){
+            if(e!="INDEX OUT OF RANGE"){
+                std::cout << "Error in testDictionary.removeByIndex(-1): Error = "
+                          << e << " should be \"INDEX OUT OF RANGE\"" << std::endl;
+                return;
+            }
+        }
+
+
+        try{
+            testDictionary.removeByIndex(3);
+        }catch(char const* e){
+            if(e!="INDEX OUT OF RANGE"){
+                std::cout << "Error in testDictionary.removeByIndex(3): Error = "
+                          << e << " should be \"INDEX OUT OF RANGE\"" << std::endl;
+                return;
+            }
+        }
+
+        testDictionary.removeByKey(2);
+
+        {
+            if(testDictionary.getSize() != 2){
+                std::cout << "Error in testDictionary.removeByKey(2): getSize() = "
+                          << testDictionary.getSize() << " should be 2" << std::endl;
+                return;
+            }
+
+            KeyValue<int, int>* testPair = testDictionary.getByIndex(1);
+
+            if(testPair->getKey() != 4 || testPair->getValue() != 3){
+                std::cout << "Error in testDictionary.removeByKey(2): getByIndex(1) = ("
+                          << testPair->getKey() << "," << testPair->getValue()
+                          << ") should be (4,3)" << std::endl;
+                return;
+            }
+        }
+
+        try{
+            testDictionary.removeByKey(8);
+        }catch(char const* e){
+            if(e!="KEY NOT FOUND"){
+                std::cout << "Error in testDictionary.removeByKey(8): Error = "
+                          << e << " should be \"KEY NOT FOUND\"" << std::endl;
+                return;
+            }
+        }
     }
 }
