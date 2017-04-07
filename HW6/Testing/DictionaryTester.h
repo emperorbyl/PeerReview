@@ -9,7 +9,8 @@ class DictionaryTester {
 public:
     static void testConstructors();
     static void testAddAndGrow();
-    static void testGetByMethods();
+    static void testGetByKey();
+    static void testRemoveMethods();
 };
 
 

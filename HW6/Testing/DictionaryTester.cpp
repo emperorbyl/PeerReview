@@ -147,6 +147,90 @@ void DictionaryTester::testAddAndGrow(){
     }
 }
 
-void DictionaryTester::testGetByMethods(){
-    std::cout << "DictionaryTester::testGetByMethods" << sdt::endl;
+void DictionaryTester::testGetByKey(){
+    std::cout << "DictionaryTester::testGetByMethods" << std::endl;
+    {
+        Dictionary<int, int> testDictionary(5);
+
+        KeyValue<int, int> pair1(1,6);
+        KeyValue<int, int> pair2(2,6);
+        KeyValue<int, int> pair3(3,4);
+        KeyValue<int, int> pair4(7000,3);
+
+        testDictionary.add(&pair1);
+        testDictionary.add(&pair2);
+        testDictionary.add(&pair3);
+        testDictionary.add(&pair4);
+
+        {
+            KeyValue<int, int>* testPair = testDictionary.getByKey(1);
+
+            if(testPair->getValue() != 6){
+                std::cout << "Error in testDictionary.getByKey(1): getValue() = "
+                          << testPair->getValue() << " should be 6" << std::endl;
+                return;
+            }
+        }
+
+        {
+            KeyValue<int, int>* testPair = testDictionary.getByKey(7000);
+
+            if(testPair->getValue() != 3){
+                std::cout << "Error in testDictionary.getByKey(7000): getValue() = "
+                          << testPair->getValue() << " should be 3" << std::endl;
+                return;
+            }
+        }
+
+        {
+            try{
+                testDictionary.getByKey(100);
+            }catch(char const* e){
+                if(e!="KEY NOT FOUND"){
+                    std::cout << "Error in testDictionary.getByKey(100): ERROR = "
+                              << e << " should be \"KEY NOT FOUND\"" << std::endl;
+                    return;
+                }
+            }
+        }
+
+        {
+            try{
+                testDictionary.getByIndex(-3);
+            }catch(char const* e){
+                if(e!="INDEX OUT OF RANGE") {
+                    std::cout << "Error in testDictionary.getByIndex(-3): ERROR = "
+                              << e << " should be \"INDEX OUT OF RANGE\"" << std::endl;
+                    return;
+                }
+            }
+        }
+
+        {
+            try {
+                testDictionary.getByIndex(4);
+            } catch (char const *e) {
+                if (e != "INDEX OUT OF RANGE") {
+                    std::cout << "Error in testDictionary.getByIndex(4): ERROR = "
+                              << e << " should be \"INDEX OUT OF RANGE\"" << std::endl;
+                    return;
+                }
+            }
+        }
+    }
+}
+
+void DictionaryTester::testRemoveMethods(){
+    std::cout << "DictionaryTester::testRemoveMethods" << std::endl;
+
+    {
+        Dictionary<int, int> testDictionary(2);
+
+        KeyValue<int, int> pair1(1,6);
+        KeyValue<int, int> pair2(2,6);
+        KeyValue<int, int> pair3(3,4);
+        KeyValue<int, int> pair4(7000,3);
+
+
+    }
 }

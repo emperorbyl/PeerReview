@@ -38,7 +38,7 @@ public:
     }
     KeyValue<K,V>* getByKey(K key) const {
         int found = findInDictionary(key);
-        if(found<=0) return m_dictionary[found];
+        if(found>=0) return m_dictionary[found];
         else throw "KEY NOT FOUND";
     };
     KeyValue<K,V>* getByIndex(int i) const {
@@ -51,6 +51,7 @@ public:
         int found = findInDictionary(key);
         if(found == -1) throw "KEY NOT FOUND";
         else removeByIndex(found);
+        //removeByIndex(found);
     }
     void removeByIndex(int i) {
         delete m_dictionary[i];
