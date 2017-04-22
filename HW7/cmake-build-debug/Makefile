@@ -135,6 +135,63 @@ HW7/fast:
 	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/build
 .PHONY : HW7/fast
 
+Configuration.obj: Configuration.cpp.obj
+
+.PHONY : Configuration.obj
+
+# target to build an object file
+Configuration.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Configuration.cpp.obj
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Configuration.cpp.obj
+.PHONY : Configuration.cpp.obj
+
+Configuration.i: Configuration.cpp.i
+
+.PHONY : Configuration.i
+
+# target to preprocess a source file
+Configuration.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Configuration.cpp.i
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Configuration.cpp.i
+.PHONY : Configuration.cpp.i
+
+Configuration.s: Configuration.cpp.s
+
+.PHONY : Configuration.s
+
+# target to generate assembly for a file
+Configuration.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Configuration.cpp.s
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Configuration.cpp.s
+.PHONY : Configuration.cpp.s
+
+Testing/Configuration.obj: Testing/Configuration.cpp.obj
+
+.PHONY : Testing/Configuration.obj
+
+# target to build an object file
+Testing/Configuration.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/Configuration.cpp.obj
+.PHONY : Testing/Configuration.cpp.obj
+
+Testing/Configuration.i: Testing/Configuration.cpp.i
+
+.PHONY : Testing/Configuration.i
+
+# target to preprocess a source file
+Testing/Configuration.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/Configuration.cpp.i
+.PHONY : Testing/Configuration.cpp.i
+
+Testing/Configuration.s: Testing/Configuration.cpp.s
+
+.PHONY : Testing/Configuration.s
+
+# target to generate assembly for a file
+Testing/Configuration.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/Configuration.cpp.s
+.PHONY : Testing/Configuration.cpp.s
+
 Testing/DictionaryTester.obj: Testing/DictionaryTester.cpp.obj
 
 .PHONY : Testing/DictionaryTester.obj
@@ -253,6 +310,12 @@ help:
 	@echo ... Test
 	@echo ... HW7
 	@echo ... edit_cache
+	@echo ... Configuration.obj
+	@echo ... Configuration.i
+	@echo ... Configuration.s
+	@echo ... Testing/Configuration.obj
+	@echo ... Testing/Configuration.i
+	@echo ... Testing/Configuration.s
 	@echo ... Testing/DictionaryTester.obj
 	@echo ... Testing/DictionaryTester.i
 	@echo ... Testing/DictionaryTester.s

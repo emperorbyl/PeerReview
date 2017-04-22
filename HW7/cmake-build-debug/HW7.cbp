@@ -122,6 +122,14 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Configuration.cpp">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Configuration.h">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Dictionary.h">
 			<Option target="Test"/>
 			<Option target="HW7"/>
@@ -129,6 +137,12 @@
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/KeyValue.h">
 			<Option target="Test"/>
 			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Testing/Configuration.cpp">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Testing/Configuration.h">
+			<Option target="Test"/>
 		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Testing/DictionaryTester.cpp">
 			<Option target="Test"/>
