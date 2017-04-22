@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Test
+
+# Build rule for target.
+Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Test
+.PHONY : Test
+
+# fast build rule for target.
+Test/fast:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/build
+.PHONY : Test/fast
+
+#=============================================================================
 # Target rules for targets named HW7
 
 # Build rule for target.
@@ -121,6 +134,87 @@ HW7: cmake_check_build_system
 HW7/fast:
 	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/build
 .PHONY : HW7/fast
+
+Testing/DictionaryTester.obj: Testing/DictionaryTester.cpp.obj
+
+.PHONY : Testing/DictionaryTester.obj
+
+# target to build an object file
+Testing/DictionaryTester.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.obj
+.PHONY : Testing/DictionaryTester.cpp.obj
+
+Testing/DictionaryTester.i: Testing/DictionaryTester.cpp.i
+
+.PHONY : Testing/DictionaryTester.i
+
+# target to preprocess a source file
+Testing/DictionaryTester.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.i
+.PHONY : Testing/DictionaryTester.cpp.i
+
+Testing/DictionaryTester.s: Testing/DictionaryTester.cpp.s
+
+.PHONY : Testing/DictionaryTester.s
+
+# target to generate assembly for a file
+Testing/DictionaryTester.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.s
+.PHONY : Testing/DictionaryTester.cpp.s
+
+Testing/KeyValueTester.obj: Testing/KeyValueTester.cpp.obj
+
+.PHONY : Testing/KeyValueTester.obj
+
+# target to build an object file
+Testing/KeyValueTester.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.obj
+.PHONY : Testing/KeyValueTester.cpp.obj
+
+Testing/KeyValueTester.i: Testing/KeyValueTester.cpp.i
+
+.PHONY : Testing/KeyValueTester.i
+
+# target to preprocess a source file
+Testing/KeyValueTester.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.i
+.PHONY : Testing/KeyValueTester.cpp.i
+
+Testing/KeyValueTester.s: Testing/KeyValueTester.cpp.s
+
+.PHONY : Testing/KeyValueTester.s
+
+# target to generate assembly for a file
+Testing/KeyValueTester.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.s
+.PHONY : Testing/KeyValueTester.cpp.s
+
+Testing/testMain.obj: Testing/testMain.cpp.obj
+
+.PHONY : Testing/testMain.obj
+
+# target to build an object file
+Testing/testMain.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/testMain.cpp.obj
+.PHONY : Testing/testMain.cpp.obj
+
+Testing/testMain.i: Testing/testMain.cpp.i
+
+.PHONY : Testing/testMain.i
+
+# target to preprocess a source file
+Testing/testMain.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/testMain.cpp.i
+.PHONY : Testing/testMain.cpp.i
+
+Testing/testMain.s: Testing/testMain.cpp.s
+
+.PHONY : Testing/testMain.s
+
+# target to generate assembly for a file
+Testing/testMain.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/testMain.cpp.s
+.PHONY : Testing/testMain.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -156,8 +250,18 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... rebuild_cache
+	@echo ... Test
 	@echo ... HW7
 	@echo ... edit_cache
+	@echo ... Testing/DictionaryTester.obj
+	@echo ... Testing/DictionaryTester.i
+	@echo ... Testing/DictionaryTester.s
+	@echo ... Testing/KeyValueTester.obj
+	@echo ... Testing/KeyValueTester.i
+	@echo ... Testing/KeyValueTester.s
+	@echo ... Testing/testMain.obj
+	@echo ... Testing/testMain.i
+	@echo ... Testing/testMain.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

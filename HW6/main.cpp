@@ -4,6 +4,11 @@
 #include "Dictionary.h"
 
 int main() {
+    std::string s1 = "Alabama";
+    std::string s2 = "Alabama1";
+
+    if(s1<s2) std::cout << "derp" << std::endl;
+    /*
     std::cout << "Executing main" << std::endl;
     std::cout << "Creating Table 1 - Sample Directory" << std::endl << std::endl;
 
@@ -28,4 +33,5 @@ int main() {
                   << newDictionary.getByIndex(i)->getValue()
                   << std::endl;
     }
+     */
 }
