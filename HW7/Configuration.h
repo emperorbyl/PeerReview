@@ -11,11 +11,24 @@
 
 class Configuration {
 public:
-    Configuration() {configs.Dictionary();}
-    void addNew(KeyValue* newConfig) {configs.add(newConfig);}
-    std::string getAsString(std::string key) {return (configs.getByKey(key))->getValue();}
-    int getAsInt(std::string key) {return atoi((configs.getByKey(key))->getValue());}
-    int getAsDouble(std::string key) {return atof((configs.getByKey(key))->getValue());}
+    Configuration() {};
+    void addNew(KeyValue<std::string, std::string> &newConfig) {configs.add(&newConfig);}
+    int getSize() const {return configs.getSize(); }
+    int getAllocated() const {return configs.getAllocated();}
+    std::string getAsString(std::string key) const {return (configs.getByKey(key))->getValue();}
+    int getAsInt(std::string key) const {return stoi((configs.getByKey(key))->getValue());}
+    double getAsDouble(std::string key) const {return stof((configs.getByKey(key))->getValue());}
+    std::string printConfigs() const {
+        std::string output = "";
+        for(int i = 0; i < getSize(); i++){
+            KeyValue<std::string, std::string> *thisPair = configs.getByIndex(i);
+            output += thisPair->getKey();
+            output += ": ";
+            output += thisPair->getValue();
+            output += '\n';
+        }
+        return output;
+    }
 private:
     Dictionary<std::string, std::string> configs;
 };

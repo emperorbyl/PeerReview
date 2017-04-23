@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Justin Fairbourn/cs1440/HW7/Configuration.cpp" "C:/Users/Justin Fairbourn/cs1440/HW7/cmake-build-debug/CMakeFiles/HW7.dir/Configuration.cpp.obj"
   "C:/Users/Justin Fairbourn/cs1440/HW7/main.cpp" "C:/Users/Justin Fairbourn/cs1440/HW7/cmake-build-debug/CMakeFiles/HW7.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

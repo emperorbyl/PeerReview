@@ -4,11 +4,16 @@
 
 #include "DictionaryTester.h"
 #include "KeyValueTester.h"
+#include "ConfigurationTester.h"
 
 int main(){
     KeyValueTester::testConstructors();
+
     DictionaryTester::testConstructors();
     DictionaryTester::testAddAndGrow();
     DictionaryTester::testGetByKey();
     DictionaryTester::testRemoveMethods();
+
+    ConfigurationTester::testConstructor();
+    ConfigurationTester::testGetters();
 }
