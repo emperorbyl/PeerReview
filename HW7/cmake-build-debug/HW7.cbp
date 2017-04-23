@@ -122,6 +122,14 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Analyzer.cpp">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Analyzer.h">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Configuration.h">
 			<Option target="Test"/>
 			<Option target="HW7"/>
@@ -131,6 +139,14 @@
 			<Option target="HW7"/>
 		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/KeyValue.h">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/ResultSet.cpp">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/ResultSet.h">
 			<Option target="Test"/>
 			<Option target="HW7"/>
 		</Unit>

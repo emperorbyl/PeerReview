@@ -135,6 +135,66 @@ HW7/fast:
 	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/build
 .PHONY : HW7/fast
 
+Analyzer.obj: Analyzer.cpp.obj
+
+.PHONY : Analyzer.obj
+
+# target to build an object file
+Analyzer.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Analyzer.cpp.obj
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Analyzer.cpp.obj
+.PHONY : Analyzer.cpp.obj
+
+Analyzer.i: Analyzer.cpp.i
+
+.PHONY : Analyzer.i
+
+# target to preprocess a source file
+Analyzer.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Analyzer.cpp.i
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Analyzer.cpp.i
+.PHONY : Analyzer.cpp.i
+
+Analyzer.s: Analyzer.cpp.s
+
+.PHONY : Analyzer.s
+
+# target to generate assembly for a file
+Analyzer.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Analyzer.cpp.s
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Analyzer.cpp.s
+.PHONY : Analyzer.cpp.s
+
+ResultSet.obj: ResultSet.cpp.obj
+
+.PHONY : ResultSet.obj
+
+# target to build an object file
+ResultSet.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/ResultSet.cpp.obj
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/ResultSet.cpp.obj
+.PHONY : ResultSet.cpp.obj
+
+ResultSet.i: ResultSet.cpp.i
+
+.PHONY : ResultSet.i
+
+# target to preprocess a source file
+ResultSet.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/ResultSet.cpp.i
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/ResultSet.cpp.i
+.PHONY : ResultSet.cpp.i
+
+ResultSet.s: ResultSet.cpp.s
+
+.PHONY : ResultSet.s
+
+# target to generate assembly for a file
+ResultSet.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/ResultSet.cpp.s
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/ResultSet.cpp.s
+.PHONY : ResultSet.cpp.s
+
 Testing/ConfigurationTester.obj: Testing/ConfigurationTester.cpp.obj
 
 .PHONY : Testing/ConfigurationTester.obj
@@ -280,6 +340,12 @@ help:
 	@echo ... Test
 	@echo ... HW7
 	@echo ... edit_cache
+	@echo ... Analyzer.obj
+	@echo ... Analyzer.i
+	@echo ... Analyzer.s
+	@echo ... ResultSet.obj
+	@echo ... ResultSet.i
+	@echo ... ResultSet.s
 	@echo ... Testing/ConfigurationTester.obj
 	@echo ... Testing/ConfigurationTester.i
 	@echo ... Testing/ConfigurationTester.s

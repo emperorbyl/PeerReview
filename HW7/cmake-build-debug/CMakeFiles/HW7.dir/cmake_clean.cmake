@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/HW7.dir/main.cpp.obj"
+  "CMakeFiles/HW7.dir/Analyzer.cpp.obj"
+  "CMakeFiles/HW7.dir/ResultSet.cpp.obj"
   "HW7.pdb"
   "HW7.exe"
   "HW7.exe.manifest"
