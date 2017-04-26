@@ -5,6 +5,7 @@
 #include "DictionaryTester.h"
 #include "KeyValueTester.h"
 #include "ConfigurationTester.h"
+#include "DenialOfServiceAnalyzerTester.h"
 
 int main(){
     KeyValueTester::testConstructors();
@@ -16,4 +17,6 @@ int main(){
 
     ConfigurationTester::testConstructor();
     ConfigurationTester::testGetters();
+
+    DenialOfServiceAnalyzerTester::testLoading();
 }

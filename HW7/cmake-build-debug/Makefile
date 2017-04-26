@@ -135,35 +135,125 @@ HW7/fast:
 	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/build
 .PHONY : HW7/fast
 
-Analyzer.obj: Analyzer.cpp.obj
+Configuration.obj: Configuration.cpp.obj
 
-.PHONY : Analyzer.obj
+.PHONY : Configuration.obj
 
 # target to build an object file
-Analyzer.cpp.obj:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Analyzer.cpp.obj
-	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Analyzer.cpp.obj
-.PHONY : Analyzer.cpp.obj
+Configuration.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Configuration.cpp.obj
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Configuration.cpp.obj
+.PHONY : Configuration.cpp.obj
 
-Analyzer.i: Analyzer.cpp.i
+Configuration.i: Configuration.cpp.i
 
-.PHONY : Analyzer.i
+.PHONY : Configuration.i
 
 # target to preprocess a source file
-Analyzer.cpp.i:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Analyzer.cpp.i
-	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Analyzer.cpp.i
-.PHONY : Analyzer.cpp.i
+Configuration.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Configuration.cpp.i
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Configuration.cpp.i
+.PHONY : Configuration.cpp.i
 
-Analyzer.s: Analyzer.cpp.s
+Configuration.s: Configuration.cpp.s
 
-.PHONY : Analyzer.s
+.PHONY : Configuration.s
 
 # target to generate assembly for a file
-Analyzer.cpp.s:
-	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Analyzer.cpp.s
-	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Analyzer.cpp.s
-.PHONY : Analyzer.cpp.s
+Configuration.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Configuration.cpp.s
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Configuration.cpp.s
+.PHONY : Configuration.cpp.s
+
+DenialOfServiceAnalyzer.obj: DenialOfServiceAnalyzer.cpp.obj
+
+.PHONY : DenialOfServiceAnalyzer.obj
+
+# target to build an object file
+DenialOfServiceAnalyzer.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/DenialOfServiceAnalyzer.cpp.obj
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj
+.PHONY : DenialOfServiceAnalyzer.cpp.obj
+
+DenialOfServiceAnalyzer.i: DenialOfServiceAnalyzer.cpp.i
+
+.PHONY : DenialOfServiceAnalyzer.i
+
+# target to preprocess a source file
+DenialOfServiceAnalyzer.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/DenialOfServiceAnalyzer.cpp.i
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.i
+.PHONY : DenialOfServiceAnalyzer.cpp.i
+
+DenialOfServiceAnalyzer.s: DenialOfServiceAnalyzer.cpp.s
+
+.PHONY : DenialOfServiceAnalyzer.s
+
+# target to generate assembly for a file
+DenialOfServiceAnalyzer.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/DenialOfServiceAnalyzer.cpp.s
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.s
+.PHONY : DenialOfServiceAnalyzer.cpp.s
+
+ITAK.obj: ITAK.cpp.obj
+
+.PHONY : ITAK.obj
+
+# target to build an object file
+ITAK.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/ITAK.cpp.obj
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/ITAK.cpp.obj
+.PHONY : ITAK.cpp.obj
+
+ITAK.i: ITAK.cpp.i
+
+.PHONY : ITAK.i
+
+# target to preprocess a source file
+ITAK.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/ITAK.cpp.i
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/ITAK.cpp.i
+.PHONY : ITAK.cpp.i
+
+ITAK.s: ITAK.cpp.s
+
+.PHONY : ITAK.s
+
+# target to generate assembly for a file
+ITAK.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/ITAK.cpp.s
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/ITAK.cpp.s
+.PHONY : ITAK.cpp.s
+
+PortScanAnalyzer.obj: PortScanAnalyzer.cpp.obj
+
+.PHONY : PortScanAnalyzer.obj
+
+# target to build an object file
+PortScanAnalyzer.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/PortScanAnalyzer.cpp.obj
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj
+.PHONY : PortScanAnalyzer.cpp.obj
+
+PortScanAnalyzer.i: PortScanAnalyzer.cpp.i
+
+.PHONY : PortScanAnalyzer.i
+
+# target to preprocess a source file
+PortScanAnalyzer.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/PortScanAnalyzer.cpp.i
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.i
+.PHONY : PortScanAnalyzer.cpp.i
+
+PortScanAnalyzer.s: PortScanAnalyzer.cpp.s
+
+.PHONY : PortScanAnalyzer.s
+
+# target to generate assembly for a file
+PortScanAnalyzer.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/PortScanAnalyzer.cpp.s
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.s
+.PHONY : PortScanAnalyzer.cpp.s
 
 ResultSet.obj: ResultSet.cpp.obj
 
@@ -221,6 +311,33 @@ Testing/ConfigurationTester.s: Testing/ConfigurationTester.cpp.s
 Testing/ConfigurationTester.cpp.s:
 	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/ConfigurationTester.cpp.s
 .PHONY : Testing/ConfigurationTester.cpp.s
+
+Testing/DenialOfServiceAnalyzerTester.obj: Testing/DenialOfServiceAnalyzerTester.cpp.obj
+
+.PHONY : Testing/DenialOfServiceAnalyzerTester.obj
+
+# target to build an object file
+Testing/DenialOfServiceAnalyzerTester.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DenialOfServiceAnalyzerTester.cpp.obj
+.PHONY : Testing/DenialOfServiceAnalyzerTester.cpp.obj
+
+Testing/DenialOfServiceAnalyzerTester.i: Testing/DenialOfServiceAnalyzerTester.cpp.i
+
+.PHONY : Testing/DenialOfServiceAnalyzerTester.i
+
+# target to preprocess a source file
+Testing/DenialOfServiceAnalyzerTester.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DenialOfServiceAnalyzerTester.cpp.i
+.PHONY : Testing/DenialOfServiceAnalyzerTester.cpp.i
+
+Testing/DenialOfServiceAnalyzerTester.s: Testing/DenialOfServiceAnalyzerTester.cpp.s
+
+.PHONY : Testing/DenialOfServiceAnalyzerTester.s
+
+# target to generate assembly for a file
+Testing/DenialOfServiceAnalyzerTester.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/DenialOfServiceAnalyzerTester.cpp.s
+.PHONY : Testing/DenialOfServiceAnalyzerTester.cpp.s
 
 Testing/DictionaryTester.obj: Testing/DictionaryTester.cpp.obj
 
@@ -303,6 +420,36 @@ Testing/testMain.cpp.s:
 	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Testing/testMain.cpp.s
 .PHONY : Testing/testMain.cpp.s
 
+Utils.obj: Utils.cpp.obj
+
+.PHONY : Utils.obj
+
+# target to build an object file
+Utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Utils.cpp.obj
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Utils.cpp.obj
+.PHONY : Utils.cpp.obj
+
+Utils.i: Utils.cpp.i
+
+.PHONY : Utils.i
+
+# target to preprocess a source file
+Utils.cpp.i:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Utils.cpp.i
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Utils.cpp.i
+.PHONY : Utils.cpp.i
+
+Utils.s: Utils.cpp.s
+
+.PHONY : Utils.s
+
+# target to generate assembly for a file
+Utils.cpp.s:
+	$(MAKE) -f CMakeFiles\Test.dir\build.make CMakeFiles/Test.dir/Utils.cpp.s
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Utils.cpp.s
+.PHONY : Utils.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -340,15 +487,27 @@ help:
 	@echo ... Test
 	@echo ... HW7
 	@echo ... edit_cache
-	@echo ... Analyzer.obj
-	@echo ... Analyzer.i
-	@echo ... Analyzer.s
+	@echo ... Configuration.obj
+	@echo ... Configuration.i
+	@echo ... Configuration.s
+	@echo ... DenialOfServiceAnalyzer.obj
+	@echo ... DenialOfServiceAnalyzer.i
+	@echo ... DenialOfServiceAnalyzer.s
+	@echo ... ITAK.obj
+	@echo ... ITAK.i
+	@echo ... ITAK.s
+	@echo ... PortScanAnalyzer.obj
+	@echo ... PortScanAnalyzer.i
+	@echo ... PortScanAnalyzer.s
 	@echo ... ResultSet.obj
 	@echo ... ResultSet.i
 	@echo ... ResultSet.s
 	@echo ... Testing/ConfigurationTester.obj
 	@echo ... Testing/ConfigurationTester.i
 	@echo ... Testing/ConfigurationTester.s
+	@echo ... Testing/DenialOfServiceAnalyzerTester.obj
+	@echo ... Testing/DenialOfServiceAnalyzerTester.i
+	@echo ... Testing/DenialOfServiceAnalyzerTester.s
 	@echo ... Testing/DictionaryTester.obj
 	@echo ... Testing/DictionaryTester.i
 	@echo ... Testing/DictionaryTester.s
@@ -358,6 +517,9 @@ help:
 	@echo ... Testing/testMain.obj
 	@echo ... Testing/testMain.i
 	@echo ... Testing/testMain.s
+	@echo ... Utils.obj
+	@echo ... Utils.i
+	@echo ... Utils.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

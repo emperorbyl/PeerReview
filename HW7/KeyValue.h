@@ -18,6 +18,7 @@ public:
     };
     K getKey(){return m_key;}
     V getValue(){return m_value;}
+    void setValue(V value) {m_value = value;}
 private:
     K m_key;
     V m_value;

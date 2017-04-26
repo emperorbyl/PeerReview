@@ -18,17 +18,7 @@ public:
     std::string getAsString(std::string key) const {return (configs.getByKey(key))->getValue();}
     int getAsInt(std::string key) const {return stoi((configs.getByKey(key))->getValue());}
     double getAsDouble(std::string key) const {return stof((configs.getByKey(key))->getValue());}
-    std::string printConfigs() const {
-        std::string output = "";
-        for(int i = 0; i < getSize(); i++){
-            KeyValue<std::string, std::string> *thisPair = configs.getByIndex(i);
-            output += thisPair->getKey();
-            output += ": ";
-            output += thisPair->getValue();
-            output += '\n';
-        }
-        return output;
-    }
+    std::string printConfigs() const;
 private:
     Dictionary<std::string, std::string> configs;
 };

@@ -62,13 +62,13 @@ public:
         m_dictionary[m_size - 1] = nullptr;
         m_size--;
     }
-private:
     int findInDictionary(K key) const {
         for(int i = 0; i < m_size; i++){
             if(m_dictionary[i]->getKey()==key) return i;
         }
         return -1;
     }
+private:
     KeyValue<K,V>** m_dictionary = nullptr;
     int m_allocated = 0;
     int m_size = 0;

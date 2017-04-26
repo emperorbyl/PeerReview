@@ -80,33 +80,9 @@ CMakeFiles/HW7.dir/main.cpp.obj.provides: CMakeFiles/HW7.dir/main.cpp.obj.requir
 CMakeFiles/HW7.dir/main.cpp.obj.provides.build: CMakeFiles/HW7.dir/main.cpp.obj
 
 
-CMakeFiles/HW7.dir/Analyzer.cpp.obj: CMakeFiles/HW7.dir/flags.make
-CMakeFiles/HW7.dir/Analyzer.cpp.obj: ../Analyzer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HW7.dir/Analyzer.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW7.dir\Analyzer.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW7\Analyzer.cpp"
-
-CMakeFiles/HW7.dir/Analyzer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW7.dir/Analyzer.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW7\Analyzer.cpp" > CMakeFiles\HW7.dir\Analyzer.cpp.i
-
-CMakeFiles/HW7.dir/Analyzer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW7.dir/Analyzer.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW7\Analyzer.cpp" -o CMakeFiles\HW7.dir\Analyzer.cpp.s
-
-CMakeFiles/HW7.dir/Analyzer.cpp.obj.requires:
-
-.PHONY : CMakeFiles/HW7.dir/Analyzer.cpp.obj.requires
-
-CMakeFiles/HW7.dir/Analyzer.cpp.obj.provides: CMakeFiles/HW7.dir/Analyzer.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Analyzer.cpp.obj.provides.build
-.PHONY : CMakeFiles/HW7.dir/Analyzer.cpp.obj.provides
-
-CMakeFiles/HW7.dir/Analyzer.cpp.obj.provides.build: CMakeFiles/HW7.dir/Analyzer.cpp.obj
-
-
 CMakeFiles/HW7.dir/ResultSet.cpp.obj: CMakeFiles/HW7.dir/flags.make
 CMakeFiles/HW7.dir/ResultSet.cpp.obj: ../ResultSet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HW7.dir/ResultSet.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HW7.dir/ResultSet.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW7.dir\ResultSet.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW7\ResultSet.cpp"
 
 CMakeFiles/HW7.dir/ResultSet.cpp.i: cmake_force
@@ -128,23 +104,151 @@ CMakeFiles/HW7.dir/ResultSet.cpp.obj.provides: CMakeFiles/HW7.dir/ResultSet.cpp.
 CMakeFiles/HW7.dir/ResultSet.cpp.obj.provides.build: CMakeFiles/HW7.dir/ResultSet.cpp.obj
 
 
+CMakeFiles/HW7.dir/Configuration.cpp.obj: CMakeFiles/HW7.dir/flags.make
+CMakeFiles/HW7.dir/Configuration.cpp.obj: ../Configuration.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HW7.dir/Configuration.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW7.dir\Configuration.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW7\Configuration.cpp"
+
+CMakeFiles/HW7.dir/Configuration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW7.dir/Configuration.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW7\Configuration.cpp" > CMakeFiles\HW7.dir\Configuration.cpp.i
+
+CMakeFiles/HW7.dir/Configuration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW7.dir/Configuration.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW7\Configuration.cpp" -o CMakeFiles\HW7.dir\Configuration.cpp.s
+
+CMakeFiles/HW7.dir/Configuration.cpp.obj.requires:
+
+.PHONY : CMakeFiles/HW7.dir/Configuration.cpp.obj.requires
+
+CMakeFiles/HW7.dir/Configuration.cpp.obj.provides: CMakeFiles/HW7.dir/Configuration.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Configuration.cpp.obj.provides.build
+.PHONY : CMakeFiles/HW7.dir/Configuration.cpp.obj.provides
+
+CMakeFiles/HW7.dir/Configuration.cpp.obj.provides.build: CMakeFiles/HW7.dir/Configuration.cpp.obj
+
+
+CMakeFiles/HW7.dir/ITAK.cpp.obj: CMakeFiles/HW7.dir/flags.make
+CMakeFiles/HW7.dir/ITAK.cpp.obj: ../ITAK.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HW7.dir/ITAK.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW7.dir\ITAK.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW7\ITAK.cpp"
+
+CMakeFiles/HW7.dir/ITAK.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW7.dir/ITAK.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW7\ITAK.cpp" > CMakeFiles\HW7.dir\ITAK.cpp.i
+
+CMakeFiles/HW7.dir/ITAK.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW7.dir/ITAK.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW7\ITAK.cpp" -o CMakeFiles\HW7.dir\ITAK.cpp.s
+
+CMakeFiles/HW7.dir/ITAK.cpp.obj.requires:
+
+.PHONY : CMakeFiles/HW7.dir/ITAK.cpp.obj.requires
+
+CMakeFiles/HW7.dir/ITAK.cpp.obj.provides: CMakeFiles/HW7.dir/ITAK.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/ITAK.cpp.obj.provides.build
+.PHONY : CMakeFiles/HW7.dir/ITAK.cpp.obj.provides
+
+CMakeFiles/HW7.dir/ITAK.cpp.obj.provides.build: CMakeFiles/HW7.dir/ITAK.cpp.obj
+
+
+CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj: CMakeFiles/HW7.dir/flags.make
+CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj: ../DenialOfServiceAnalyzer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW7.dir\DenialOfServiceAnalyzer.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW7\DenialOfServiceAnalyzer.cpp"
+
+CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW7\DenialOfServiceAnalyzer.cpp" > CMakeFiles\HW7.dir\DenialOfServiceAnalyzer.cpp.i
+
+CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW7\DenialOfServiceAnalyzer.cpp" -o CMakeFiles\HW7.dir\DenialOfServiceAnalyzer.cpp.s
+
+CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj.requires:
+
+.PHONY : CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj.requires
+
+CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj.provides: CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj.provides.build
+.PHONY : CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj.provides
+
+CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj.provides.build: CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj
+
+
+CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj: CMakeFiles/HW7.dir/flags.make
+CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj: ../PortScanAnalyzer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW7.dir\PortScanAnalyzer.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW7\PortScanAnalyzer.cpp"
+
+CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW7\PortScanAnalyzer.cpp" > CMakeFiles\HW7.dir\PortScanAnalyzer.cpp.i
+
+CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW7\PortScanAnalyzer.cpp" -o CMakeFiles\HW7.dir\PortScanAnalyzer.cpp.s
+
+CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj.requires:
+
+.PHONY : CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj.requires
+
+CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj.provides: CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj.provides.build
+.PHONY : CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj.provides
+
+CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj.provides.build: CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj
+
+
+CMakeFiles/HW7.dir/Utils.cpp.obj: CMakeFiles/HW7.dir/flags.make
+CMakeFiles/HW7.dir/Utils.cpp.obj: ../Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HW7.dir/Utils.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW7.dir\Utils.cpp.obj -c "C:\Users\Justin Fairbourn\cs1440\HW7\Utils.cpp"
+
+CMakeFiles/HW7.dir/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW7.dir/Utils.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Justin Fairbourn\cs1440\HW7\Utils.cpp" > CMakeFiles\HW7.dir\Utils.cpp.i
+
+CMakeFiles/HW7.dir/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW7.dir/Utils.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Justin Fairbourn\cs1440\HW7\Utils.cpp" -o CMakeFiles\HW7.dir\Utils.cpp.s
+
+CMakeFiles/HW7.dir/Utils.cpp.obj.requires:
+
+.PHONY : CMakeFiles/HW7.dir/Utils.cpp.obj.requires
+
+CMakeFiles/HW7.dir/Utils.cpp.obj.provides: CMakeFiles/HW7.dir/Utils.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\HW7.dir\build.make CMakeFiles/HW7.dir/Utils.cpp.obj.provides.build
+.PHONY : CMakeFiles/HW7.dir/Utils.cpp.obj.provides
+
+CMakeFiles/HW7.dir/Utils.cpp.obj.provides.build: CMakeFiles/HW7.dir/Utils.cpp.obj
+
+
 # Object files for target HW7
 HW7_OBJECTS = \
 "CMakeFiles/HW7.dir/main.cpp.obj" \
-"CMakeFiles/HW7.dir/Analyzer.cpp.obj" \
-"CMakeFiles/HW7.dir/ResultSet.cpp.obj"
+"CMakeFiles/HW7.dir/ResultSet.cpp.obj" \
+"CMakeFiles/HW7.dir/Configuration.cpp.obj" \
+"CMakeFiles/HW7.dir/ITAK.cpp.obj" \
+"CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj" \
+"CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj" \
+"CMakeFiles/HW7.dir/Utils.cpp.obj"
 
 # External object files for target HW7
 HW7_EXTERNAL_OBJECTS =
 
 HW7.exe: CMakeFiles/HW7.dir/main.cpp.obj
-HW7.exe: CMakeFiles/HW7.dir/Analyzer.cpp.obj
 HW7.exe: CMakeFiles/HW7.dir/ResultSet.cpp.obj
+HW7.exe: CMakeFiles/HW7.dir/Configuration.cpp.obj
+HW7.exe: CMakeFiles/HW7.dir/ITAK.cpp.obj
+HW7.exe: CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj
+HW7.exe: CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj
+HW7.exe: CMakeFiles/HW7.dir/Utils.cpp.obj
 HW7.exe: CMakeFiles/HW7.dir/build.make
 HW7.exe: CMakeFiles/HW7.dir/linklibs.rsp
 HW7.exe: CMakeFiles/HW7.dir/objects1.rsp
 HW7.exe: CMakeFiles/HW7.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable HW7.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Justin Fairbourn\cs1440\HW7\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable HW7.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\HW7.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,8 +257,12 @@ CMakeFiles/HW7.dir/build: HW7.exe
 .PHONY : CMakeFiles/HW7.dir/build
 
 CMakeFiles/HW7.dir/requires: CMakeFiles/HW7.dir/main.cpp.obj.requires
-CMakeFiles/HW7.dir/requires: CMakeFiles/HW7.dir/Analyzer.cpp.obj.requires
 CMakeFiles/HW7.dir/requires: CMakeFiles/HW7.dir/ResultSet.cpp.obj.requires
+CMakeFiles/HW7.dir/requires: CMakeFiles/HW7.dir/Configuration.cpp.obj.requires
+CMakeFiles/HW7.dir/requires: CMakeFiles/HW7.dir/ITAK.cpp.obj.requires
+CMakeFiles/HW7.dir/requires: CMakeFiles/HW7.dir/DenialOfServiceAnalyzer.cpp.obj.requires
+CMakeFiles/HW7.dir/requires: CMakeFiles/HW7.dir/PortScanAnalyzer.cpp.obj.requires
+CMakeFiles/HW7.dir/requires: CMakeFiles/HW7.dir/Utils.cpp.obj.requires
 
 .PHONY : CMakeFiles/HW7.dir/requires
 

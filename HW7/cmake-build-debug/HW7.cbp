@@ -122,11 +122,11 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Analyzer.cpp">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Analyzer.h">
 			<Option target="Test"/>
 			<Option target="HW7"/>
 		</Unit>
-		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Analyzer.h">
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Configuration.cpp">
 			<Option target="Test"/>
 			<Option target="HW7"/>
 		</Unit>
@@ -134,11 +134,35 @@
 			<Option target="Test"/>
 			<Option target="HW7"/>
 		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/DenialOfServiceAnalyzer.cpp">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/DenialOfServiceAnalyzer.h">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Dictionary.h">
 			<Option target="Test"/>
 			<Option target="HW7"/>
 		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/ITAK.cpp">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/ITAK.h">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/KeyValue.h">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/PortScanAnalyzer.cpp">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/PortScanAnalyzer.h">
 			<Option target="Test"/>
 			<Option target="HW7"/>
 		</Unit>
@@ -156,6 +180,12 @@
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Testing/ConfigurationTester.h">
 			<Option target="Test"/>
 		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Testing/DenialOfServiceAnalyzerTester.cpp">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Testing/DenialOfServiceAnalyzerTester.h">
+			<Option target="Test"/>
+		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Testing/DictionaryTester.cpp">
 			<Option target="Test"/>
 		</Unit>
@@ -170,6 +200,14 @@
 		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Testing/testMain.cpp">
 			<Option target="Test"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Utils.cpp">
+			<Option target="Test"/>
+			<Option target="HW7"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/Utils.h">
+			<Option target="Test"/>
+			<Option target="HW7"/>
 		</Unit>
 		<Unit filename="C:/Users/Justin Fairbourn/cs1440/HW7/main.cpp">
 			<Option target="HW7"/>

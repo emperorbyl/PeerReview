@@ -11,8 +11,12 @@
 
 class ResultSet {
 public:
+    ResultSet(){ results = new Dictionary<std::string, std::vector<std::string>>;}
+    Dictionary<std::string, std::vector<std::string>>* getResults(){return results;};
+    //std::vector<std::string>* getSet(int i) {return *(results->getByIndex(i)->getValue());}
     const void print(std::ostream &out);
-    Dictionary<std::string, std::vector<std::string>> results;
+private:
+    Dictionary<std::string, std::vector<std::string>> *results;
 };
 
 
